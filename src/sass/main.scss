@@ -1,0 +1,14 @@
+$primary: #000;
+$secondary: #f6f6f6;
+
+$display-font-sizes: (
+  1: 7.5rem,
+  2: 7.5rem,
+  3: 5rem,
+  4: 4rem,
+  5: 3rem,
+  6: 2.5rem,
+);
+
+//import Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

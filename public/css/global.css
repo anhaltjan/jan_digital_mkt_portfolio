@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p,
+ul,
+h1,
+h2 {
+  font-family: 'nimbus_sans_lregular', Arial, sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'nimbus_sans_lbold', Arial, sans-serif;
+}
+
+p,
+ul,
+a,
+ruby {
+  font-family: 'nimbus_sans_lregular', Arial, sans-serif;
+}

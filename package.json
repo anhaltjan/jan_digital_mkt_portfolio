@@ -1,0 +1,17 @@
+{
+  "name": "jan_digital_mkt_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}
