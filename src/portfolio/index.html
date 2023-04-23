@@ -3,14 +3,36 @@ layout: /layouts/base.html
 title: 'Portfolio'
 ---
 
-<div class="container" style="max-width: 750px">
+<div class="container" style="max-width: 600px">
   <ul style="list-style: none">
     {%- for post in collections.portfolio -%}
-    <li>
-      <img style="max-width: 250px" src="{{ post.data.image }}" alt="" />
+    <li class="card border-1">
+      <div class="row g-0">
+        <div class="col-5">
+          <img class="img-fluid" src="{{post.data.image}}" alt="" />
+        </div>
+        <div class="col-7 ps-5">
+          <div
+            class="d-flex flex-column justify-content-around"
+            style="height: 100%"
+          >
+            <div class="d-flex gap-1 flex-column">
+              <h3>{{ post.data.title }}</h3>
 
-      <h3>{{ post.data.title }}</h3>
-      <a href="{{ post.url }}">{{ post.url }}</a>
+              <time datetime="{{ post.data.date }}">{{ post.data.date }}</time>
+
+              <time datetime="{{ post.data.time }}">{{ post.data.time }}</time>
+            </div>
+            <div>
+              <a
+                class="btn btn-outline-primary text-black text-uppercase fw-bold rounded-0 px-5"
+                href="{{ post.url }}"
+                >Read</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </li>
     {%- endfor -%}
   </ul>
