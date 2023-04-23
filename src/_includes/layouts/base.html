@@ -3,15 +3,15 @@
   <head>
     {% include "basehead.html" %} {% block head %} {% endblock %}
   </head>
-  <body class="">
+  <body>
     <!-- CTA banner -->
     <div class="bg-black py-1">
       <div class="container">
         <div class="row align-items-end">
           <div
-            class="col-12 col-md-6 d-flex gap-3 text-light align-items-center justify-content-center py-3"
+            class="col-12 col-md-6 d-flex gap-3 text-light align-items-center justify-content-center py-4"
           >
-            <span class="">
+            <span class="text-white">
               Do you wanna enhance clients Digital marketing?</span
             >
           </div>
@@ -21,13 +21,13 @@
             <a
               href=""
               style="letter-spacing: 1.5px"
-              class="btn btn-outline-primary text-light rounded-0"
+              class="btn btn-outline-primary text-white rounded-0"
               >Yes, Let's talk ASAP</a
             >
 
             <a
               href=""
-              class="btn btn-outline-dark text-secondary rounded-0 fw-light"
+              class="btn btn-outline-dark text-white rounded-0 fw-light"
               >No, no enhancing please</a
             >
           </div>
@@ -37,14 +37,11 @@
     <header>
       {% include "baseheader.html" %} {% block header %} {% endblock %}
     </header>
-    <main class="container">
-      <h1 class="text-capitalize py-4">{{ title }}</h1>
+    <main class="container d-flex flex-column justify-content-center">
+      <h1 class="h1 text-center text-uppercase">{{ title }}</h1>
       {{ content | safe }}
     </main>
-    <footer
-      class="py-2"
-      style="background-color: #2a2829; margin-block-start: 20%"
-    >
+    <footer class="py-2" style="margin-block-start: 20%">
       {% include "basefooter.html" %}
     </footer>
   </body>
