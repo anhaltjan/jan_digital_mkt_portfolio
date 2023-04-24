@@ -4,10 +4,11 @@ layout: layouts/base.html
 ---
 
 <div class="container py-4" style="max-width: 500px">
-  <form action="">
+  <form name="contact" method="POST" data-netlify="true">
     <div class="form-floating mb-4">
       <input
         type="text"
+        name="name"
         class="form-control border-dark rounded-0"
         id="floatingName"
         placeholder="Name"
@@ -17,6 +18,7 @@ layout: layouts/base.html
     <div class="form-floating mb-4">
       <input
         type="email"
+        name="email"
         class="form-control border-dark rounded-0"
         id="floatingInput"
         placeholder="name@example.com"
@@ -30,12 +32,16 @@ layout: layouts/base.html
         placeholder="Leave a comment here"
         id="floatingTextarea"
         style="min-height: 200px"
+        name="message"
       ></textarea>
       <label for="floatingTextarea">Message</label>
     </div>
     <!-- SUBMIT -->
     <div class="text-center">
-      <button class="btn btn-secondary text-light rounded-0 py-2 px-5">
+      <button
+        type="submit"
+        class="btn btn-secondary text-light rounded-0 py-2 px-5"
+      >
         Submit
       </button>
     </div>
