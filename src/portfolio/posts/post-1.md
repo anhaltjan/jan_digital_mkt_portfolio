@@ -1,6 +1,6 @@
 ---
 layout: layouts/posts.html
-title: Shampoo for manly men
+title: post 1
 image: /assets/jan.png
 description: This product was rad
 date: '2012-04-06'

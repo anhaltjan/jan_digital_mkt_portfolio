@@ -4,24 +4,31 @@ layout: layouts/base.html
 ---
 
 <div
-  class="p-5 my-5 border-0 rounded-5 text-center"
   style="
-    background: rgb(7, 94, 84);
-    background: linear-gradient(
-      45deg,
-      rgba(7, 94, 84, 1) 0%,
-      rgba(18, 140, 126, 1) 25%,
-      rgba(37, 211, 102, 1) 50%,
-      rgba(220, 248, 198, 1) 77%,
-      rgba(236, 229, 221, 1) 100%
-    );
+    background: url(/assets/backgrounds/whatsapp-background-repeat.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 100%;
+    width: 100%;
   "
+  class="pt-2 pb-5 d-flex flex-column align-items-center"
 >
-  <img
-    class=""
-    style="width: 250px"
-    src="/assets/wa-qr.png"
-    alt="Jan Anhalt's QR"
-  />
-  <h5 class="fw-bold text-white pt-5">Talk soon!🙋🏻‍♂️</h5>
+  <div
+    class="p-5 my-5 border-0 rounded-0 text-center"
+    style="background: rgba(37, 211, 102, 1)"
+  >
+    <img
+      class=""
+      style="width: 250px"
+      src="/assets/wa-qr.png"
+      alt="Jan Anhalt's QR"
+    />
+    <h5 class="fw-bold text-white pt-5">Talk soon!🙋🏻‍♂️</h5>
+  </div>
+  <a
+    target="_blank"
+    class="btn btn-primary rounded-0 py-2 px-4 fs-4"
+    href="https://www.linkedin.com/in/anhaltjan/"
+    >Connect on LinkedIn</a
+  >
 </div>
