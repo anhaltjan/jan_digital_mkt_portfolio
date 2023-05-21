@@ -9,7 +9,7 @@
     <header>
       {% include "baseheader.html" %} {% block header %} {% endblock %}
     </header>
-    <main class="position-relative container-fluid">
+    <main class="position-relative container">
       <div class="position-fixed z-3" style="bottom: 77px; right: 68px">
         <div class="ratio ratio-1x1">
           <div>
@@ -48,7 +48,7 @@
                 style="list-style: none"
               >
                 <li>Contact</li>
-                <li>
+                <!--           <li>
                   <a href="/whats-app"
                     ><img src="/assets/sns/wa-icon.png" alt="WhatsApp link"
                   /></a>
@@ -57,7 +57,7 @@
                   <a href="/line"
                     ><img src="/assets/sns/ln-icon.png" alt="LINE link"
                   /></a>
-                </li>
+                </li> -->
                 <li>
                   <a
                     target="_blank"
@@ -94,15 +94,16 @@
                     ><img src="/assets/sns/sc-icon.png" alt="SnapChat link"
                   /></a>
                 </li> -->
-                <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
-                  /></a>
-                </li>
+
                 <li>Work</li>
                 <li>
                   <a target="_blank" href="https://dribbble.com/anhaltjan"
                     ><img src="/assets/sns/dr-icon.png" alt="Dribbble link"
+                  /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="#"
+                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
                   /></a>
                 </li>
                 <!--               <li>
@@ -122,8 +123,6 @@
         <section class="col-12 col-lg-11">{{ content | safe }}</section>
       </div>
     </main>
-    <footer class="container-fluid bg-secondary py-4">
-      {% include "basefooter.html" %}
-    </footer>
+    <footer class="">{% include "basefooter.html" %}</footer>
   </body>
 </html>

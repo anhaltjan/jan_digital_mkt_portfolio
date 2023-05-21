@@ -73,7 +73,7 @@
     >
       <ul
         style="letter-spacing: 3px"
-        class="navbar-nav gap-3 py-4 fw-bold fs-6 text-uppercase"
+        class="navbar-nav gap-3 py-4 fw-bold text-uppercase"
       >
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/">Home</a>
@@ -97,16 +97,35 @@
             <li>
               <a class="dropdown-item fw-bold" href="/backstory"> Backstory </a>
             </li>
-            <li>
-              <a class="dropdown-item fw-bold" href="/hobbies-n-likes">
-                Likes & Hobbies
-              </a>
-            </li>
           </ul>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolio">Portfolio</a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Portfolio
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item fw-bold" href="/social-media-marketing">
+                Social Media Marketing
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" href="/website-development"
+                >Website Development</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" href="/website-design"
+                >Website Design</a
+              >
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog">Blog</a>
@@ -120,7 +139,7 @@
 </nav>
   
     </header>
-    <main class="position-relative container-fluid">
+    <main class="position-relative container">
       <div class="position-fixed z-3" style="bottom: 77px; right: 68px">
         <div class="ratio ratio-1x1">
           <div>
@@ -231,23 +250,35 @@
           </div>
         </section>
         <section class="col-12 col-lg-11">
-<article class="container">
+<article class="container" style="max-width: 90ch; text-align: justify">
   <p><strong>Advertisement :)</strong></p>
 
-  <a href="../../" class="btn btn-secondary">back to blog</a>
+
+  <a
+    target="_blank"
+    href="/"
+    style="background-color: orangered"
+    class="btn btn-primary text-uppercase my-4 border-0 rounded-0 fw-bold text-decoration-underline"
+    >Go home</a
+  >
+  <a
+    target="_blank"
+    href="https://www.linkedin.com/in/anhaltjan/"
+    style="background-color: #0a66c2"
+    class="btn btn-primary text-uppercase border-0 rounded-0 fw-bold text-decoration-underline"
+    >Network with me on LinkedIn</a
+  >
 </article>
 </section>
       </div>
     </main>
-    <footer class="container-fluid bg-secondary py-4">
-      <div class="container-fluid">
+    <footer class="bg-secondary py-4"><div class="container-fluid bg-primary">
   <p
     class="fw-bold text-uppercase text-center bg-primary py-3 px-4 text-secondary"
   >
     Jan Anhalt © 2023 All Rights Reserved.
   </p>
 </div>
-
-    </footer>
+</footer>
   </body>
 </html>

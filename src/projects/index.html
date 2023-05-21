@@ -1,0 +1,31 @@
+---
+layout: /layouts/base.html
+title: 'Projects'
+---
+
+<div class="container">
+  <h2 class="fs-4 text-uppercase fw-bold text-start">
+    Projects made for brands
+  </h2>
+
+  <ul class="row g-3 p-0" style="list-style: none">
+    {%- for post in collections.projects -%}
+    <li class="col-12 col-md-6 col-lg-4 card border-0 bg-transparent">
+      <a href="{{ post.url }}" style="text-decoration: none">
+        <div class="bg-primary border-bottom border-info">
+          <img
+            style="object-fit: cover"
+            class="img-fluid"
+            src="{{post.data.image}}"
+            alt="{post.data.alt}"
+          />
+        </div>
+        <div class="text-center py-2">
+          <h3 class="">{{post.data.title}}</h3>
+          <p>{{post.data.description}}</p>
+        </div>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>

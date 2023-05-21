@@ -30,7 +30,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+  <div class="container">
     <div class="d-flex align-items-center gap-1">
       <a class="navbar-brand m-0" href="/">
         <svg
@@ -40,7 +40,7 @@
           viewBox="0 0 265 68"
           fill="none"
         >
-          <rect width="265" height="68" fill="currentColor" />
+          <rect width="265" height="68" fill="#e21c21" />
           <path
             d="M58.32 16.84H52.44L49.48 35.76C49.16 37.72 48.72 42.6 45.84 42.6C44.88 42.6 44.04 41.52 43.88 40.64L39.44 44.96C40.68 46.52 42.72 47.8 44.92 47.8C47.64 47.8 50.28 46.68 52.2 44.4C54.28 41.96 54.72 39.56 55.2 36.76L58.32 16.84ZM79.2269 27.36H73.7069L73.3869 29.2C72.3069 27.6 70.3469 26.72 68.3069 26.72C62.6669 26.72 58.5469 31.88 57.7069 37.08C56.8669 42.4 59.3069 47.64 65.0669 47.64C67.1069 47.64 69.3469 46.76 70.7869 45.2H70.8669L70.5869 47H76.1069L79.2269 27.36ZM67.1469 42.68C64.2669 42.68 62.9869 39.8 63.3869 37.16C63.7869 34.52 66.0269 31.68 68.9069 31.68C71.7869 31.68 73.1069 34.52 72.7069 37.16C72.3069 39.8 70.0269 42.68 67.1469 42.68ZM88.8841 27.36H83.2841L80.1641 47H85.7641L87.2841 37.28C87.6841 34.92 88.3241 31.2 91.6441 31.2C94.8041 31.2 94.2041 34.24 93.8041 36.6L92.1641 47H97.7641L99.6841 35C100.404 30.44 99.4441 26.72 94.1641 26.72C92.1641 26.72 90.1241 27.4 88.6841 29.16H88.6041L88.8841 27.36ZM131.128 40.64L132.448 47H138.728L132.208 16.04H127.648L110.968 47H117.168L120.648 40.64H131.128ZM130.248 35.84H123.088L128.168 24.88H128.248L130.248 35.84ZM149.079 27.36H143.479L140.359 47H145.959L147.479 37.28C147.879 34.92 148.519 31.2 151.839 31.2C154.999 31.2 154.399 34.24 153.999 36.6L152.359 47H157.959L159.879 35C160.599 30.44 159.639 26.72 154.359 26.72C152.359 26.72 150.319 27.4 148.879 29.16H148.799L149.079 27.36ZM167.321 13.08L161.961 47H167.561L169.081 37.28C169.481 34.92 170.121 31.2 173.441 31.2C176.601 31.2 176.001 34.24 175.601 36.6L173.961 47H179.561L181.481 35C182.201 30.44 181.241 26.72 175.961 26.72C173.961 26.72 171.921 27.4 170.481 29H170.401L172.921 13.08H167.321ZM205.243 27.36H199.723L199.403 29.2C198.323 27.6 196.363 26.72 194.323 26.72C188.683 26.72 184.563 31.88 183.723 37.08C182.882 42.4 185.323 47.64 191.083 47.64C193.123 47.64 195.363 46.76 196.803 45.2H196.883L196.603 47H202.122L205.243 27.36ZM193.163 42.68C190.283 42.68 189.003 39.8 189.403 37.16C189.803 34.52 192.043 31.68 194.923 31.68C197.803 31.68 199.123 34.52 198.723 37.16C198.323 39.8 196.043 42.68 193.163 42.68ZM217.14 13.08H211.54L206.18 47H211.78L217.14 13.08ZM224.39 32.08H227.83L228.59 27.36H225.15L226.19 20.72H220.59L219.55 27.36H217.63L216.87 32.08H218.79L216.43 47H222.03L224.39 32.08Z"
             fill="#FFFFFF"
@@ -48,10 +48,13 @@
         </svg>
       </a>
       <div
-        class="bg-primary d-flex px-2 justify-content-center align-items-center"
+        class="d-flex px-2 justify-content-center align-items-center"
         style="height: 52px"
       >
-        <h1 class="h1 fs-6 px-2 text-center text-uppercase m-0 text-secondary">
+        <h1
+          class="px-2 text-center text-uppercase m-0"
+          style="letter-spacing: 1px; font-weight: 800; font-size: 1rem"
+        >
           Specialties
         </h1>
       </div>
@@ -72,42 +75,21 @@
       id="navbarNav"
     >
       <ul
-        style="letter-spacing: 3px"
-        class="navbar-nav gap-3 py-4 fw-bold fs-6 text-uppercase"
+        style="letter-spacing: 3px; font-weight: 100; font-size: 0.8rem"
+        class="navbar-nav gap-3 py-4 text-uppercase"
       >
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/about-jan"
+            >About Jan</a
           >
-            About Jan
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item fw-bold" href="/specialties">
-                Specialties
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item fw-bold" href="/backstory"> Backstory </a>
-            </li>
-            <li>
-              <a class="dropdown-item fw-bold" href="/hobbies-n-likes">
-                Likes & Hobbies
-              </a>
-            </li>
-          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/projects">Projects</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolio">Portfolio</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog">Blog</a>
         </li>
@@ -120,7 +102,7 @@
 </nav>
   
     </header>
-    <main class="position-relative container-fluid">
+    <main class="position-relative container">
       <div class="position-fixed z-3" style="bottom: 77px; right: 68px">
         <div class="ratio ratio-1x1">
           <div>
@@ -159,7 +141,7 @@
                 style="list-style: none"
               >
                 <li>Contact</li>
-                <li>
+                <!--           <li>
                   <a href="/whats-app"
                     ><img src="/assets/sns/wa-icon.png" alt="WhatsApp link"
                   /></a>
@@ -168,7 +150,7 @@
                   <a href="/line"
                     ><img src="/assets/sns/ln-icon.png" alt="LINE link"
                   /></a>
-                </li>
+                </li> -->
                 <li>
                   <a
                     target="_blank"
@@ -205,15 +187,16 @@
                     ><img src="/assets/sns/sc-icon.png" alt="SnapChat link"
                   /></a>
                 </li> -->
-                <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
-                  /></a>
-                </li>
+
                 <li>Work</li>
                 <li>
                   <a target="_blank" href="https://dribbble.com/anhaltjan"
                     ><img src="/assets/sns/dr-icon.png" alt="Dribbble link"
+                  /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="#"
+                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
                   /></a>
                 </li>
                 <!--               <li>
@@ -231,91 +214,218 @@
           </div>
         </section>
         <section class="col-12 col-lg-11">
-<div class="text-uppercase fw-bold container lh-lg gap-3">
-  <h2 class="fs-1 fw-bold bg-primary py-4 text-center text-secondary">
-    Jan = Yes & Others = Yes
-  </h2>
+<div class="container lh-lg">
+  <section class="row bg-secondary p-4">
+    <div class="col-12 col-md-4 pb-4">
+      <div style="aspect-ratio: 9 / 16" class="bg-white">
+        <img class="" src="" alt="" />
+      </div>
+    </div>
+    <div class="col-12 col-md-8">
+      <div
+        class="d-flex flex-column justify-content-center"
+        style="height: 100%; text-align: justify"
+      >
+        <h2 class="fs-5 text-uppercase fw-bold text-start">Mission</h2>
+        <p>
+          Jan Anhalt's vocation is ensuring the development of each his client’s
+          social media while respecting their identity furthermore, maintaining
+          their reputation. By providing all the skills, knowledge and
+          creativity he aims to always produce high-quality strategies, amazing
+          content which produce long-term lead conversions at the lowest
+          feasible cost. Jan.
+          <span class="fw-bold"
+            >(Or Simply: Make the client a lot of money without ruining their
+            reputation.)</span
+          >
+        </p>
 
-  <p class="fs-2" style="text-align: justify">
-    I will not convince you how good I am because there are more talented
-    people, but I will tell you my focus.
-  </p>
-  <p class="fs-2" style="text-align: justify">
-    I specialize in gaining male leads on social media platforms, that's it
-  </p>
-  <p class="h3 fw-bold fs-2 text-center bg-primary text-secondary py-2 px-4">
-    What I will do:
-  </p>
-  <ul class="list-group rounded-0 lh-lg">
-    <li class="list-group-item">
-      Create a flexible strategy to attain male leads that will most likely will
-      be fanatical with your brand.
-    </li>
-    <li class="list-group-item">
-      Develop content based on your strategy's goals and align it with your
-      brand.
-    </li>
-    <li class="list-group-item">
-      Use previous previous and current data to find what content hits hard and
-      pump it up to increase leads & engagements.
-      <ol class="list-group list-group-numbered list-group-flush lh-lg">
-        <li class="list-group-item">quantity > quality content (post a lot)</li>
-        <li class="list-group-item">data analysis (find what content works)</li>
-        <li class="list-group-item">
-          create quality posts (pump up the good content)
-        </li>
-        <li class="list-group-item">Post quality everyday</li>
-      </ol>
-    </li>
-    <li class="list-group-item">
-      Create daily content that tests the waters, creates brand value and out of
-      left field content.
-    </li>
-    <li class="list-group-item">Maintain this for 5-10 years</li>
-    <li class="list-group-item">
-      Create a strategy and flexible scripts for customer engagement
-    </li>
-  </ul>
-  <a
-    target="_blank"
-    href="https://www.linkedin.com/in/anhaltjan/"
-    class="btn btn-primary my-4 rounded-0 fw-bold text-decoration-underline"
-    >Assess me on LinkedIn</a
-  >
-  <p class="h3 fw-bold fs-2 text-center bg-primary text-secondary py-2 px-4">
-    What I can do:
-  </p>
-  <ol class="list-group list-group-numbered rounded-0 lh-lg">
-    <li class="list-group-item">Website design & development</li>
-    <li class="list-group-item">Brand development</li>
-    <li class="list-group-item">Menswear brand start-up consulting</li>
-    <li class="list-group-item">
-      In-house consulting for brick & Mortar sales
-    </li>
-    <li class="list-group-item">Maintain this for 5-10 years</li>
-    <li class="list-group-item">
-      Create a strategy and flexible scripts for customer engagement
-    </li>
-  </ol>
-  <a
-    target="_blank"
-    href="https://www.linkedin.com/in/anhaltjan/"
-    class="btn btn-primary my-4 rounded-0 fw-bold text-decoration-underline"
-    >Network with me on LinkedIn</a
-  >
+        <h3 class="fs-5 text-uppercase fw-bold text-start mt-4">Specialty</h3>
+        <p>
+          Jan Anhalt, a social media strategist and copywriter for large-scale
+          fashion and men's brands. As a former business owner he understands
+          what it means to be the voice of a brand and connecting with his
+          customers. He aims to always design impactful social media strategies
+          that promote enagagement leading to high lead conversions. But Jan
+          cannot do this alone, he needs impactful leaders and team-members who
+          push each other to create daily progress.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 d-grid">
+      <a
+        type="button"
+        target="_blank"
+        href="https://www.linkedin.com/in/anhaltjan/"
+        class="btn btn-outline-primary my-4"
+        ><i class="bi bi-linkedin p-0 me-2" style="color: #0a66c2"></i>
+        <span class="fw-bold">Connect </span>with Jan Anhalt
+        <i class="bi bi-box-arrow-up-right ps-3"></i>
+      </a>
+    </div>
+  </section>
+  <section class="py-4 text-center">
+    <h3 class="fs-5 text-uppercase fw-bold">Non-Negotiable Values</h3>
+    <p>These are very serious values which Jan stands by.</p>
+    <div class="row text-center gap-2">
+      <div class="col bg-primary text-secondary align-items-center">
+        Always Learning
+      </div>
+      <div class="col bg-primary text-secondary align-items-center">
+        Competitive Greatness
+      </div>
+      <div class="col bg-primary text-secondary align-items-center">
+        Unimpeachable Candor
+      </div>
+      <div class="col bg-primary text-secondary align-items-center">
+        Unbeatable Character
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #eedfd2" class="row p-4">
+    <h3 class="fs-5 text-uppercase fw-bold">Strategical Viewpoint</h3>
+    <p style="text-align: justify">
+      Jan coined a personal term for strategy called "repeatable micro-dynamism"
+      which means working hard on small repeatable tasks that add up to huge
+      wins long-term. For example, if the goal is to improve
+      followers/subscribers; have a daily or biweekly goal of 1%. If done
+      correct, the end result will be massive and repeatable the next year. This
+      allows you to outcompete competition, boost moral, moreover simplify tasks
+      for all team members.
+    </p>
+  </section>
+  <section class="row">
+    <h3 class="fs-5 text-uppercase fw-bold p-4">
+      Social Media Content Strategy (simplified)
+    </h3>
+    <ul class="list-group list-group-numbered rounded-0 border lh-lg pe-0">
+      <li class="list-group-item">Define your long & short term goals</li>
+      <li class="list-group-item">
+        Let's define all your target markets, inside define the buyer personas
+        with as much detail as possible.
+      </li>
+      <li class="list-group-item">
+        Based ony goals & defined personas create a strategy to target your
+        leads.
+      </li>
+      <li class="list-group-item">
+        Using previous & future data to find what content hits hard & pump it up
+        to increase leads & engagements.
+        <ol class="list-group list-group-numbered list-group-flush lh-lg">
+          <li class="list-group-item">
+            quantity > quality content (post a lot)
+          </li>
+          <li class="list-group-item">
+            data analysis (find what content works)
+          </li>
+          <li class="list-group-item">
+            create quality posts (pump up the good content)
+          </li>
+          <li class="list-group-item">Post quality everyday</li>
+        </ol>
+      </li>
+      <li class="list-group-item">
+        Turn content that improved organic growth & turn it into paid
+        advertisment
+      </li>
+      <li class="list-group-item">
+        Collect data, report results, improve the process & repeat.
+      </li>
+    </ul>
+    <a
+      type="button"
+      target="_blank"
+      href="/portfolio"
+      class="btn btn-outline-primary my-4"
+      style="width: fit-content"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="24"
+        class="me-2"
+        viewBox="0 0 288 432"
+        role="img"
+      >
+        <rect
+          width="95.0226"
+          height="142.534"
+          fill="black"
+          fill-opacity="0"
+          transform="translate(1.46603 2.19946) scale(3)"
+        ></rect>
+        <path
+          d="M144 216C144 176.641 175.907 144.733 215.267 144.733V144.733C254.626 144.733 286.534 176.641 286.534 216V216C286.534 255.36 254.626 287.267 215.267 287.267V287.267C175.907 287.267 144 255.36 144 216V216Z"
+          fill="#1ABCFE"
+        ></path>
+        <path
+          d="M1.46603 358.534C1.46603 319.175 33.3733 287.267 72.733 287.267H144V358.534C144 397.894 112.093 429.801 72.733 429.801V429.801C33.3733 429.801 1.46603 397.894 1.46603 358.534V358.534Z"
+          fill="#0ACF83"
+        ></path>
+        <path
+          d="M144 2.19946V144.733H215.267C254.627 144.733 286.534 112.826 286.534 73.4664V73.4664C286.534 34.1068 254.627 2.19946 215.267 2.19946L144 2.19946Z"
+          fill="#FF7262"
+        ></path>
+        <path
+          d="M1.46603 73.4664C1.46603 112.826 33.3733 144.733 72.733 144.733L144 144.733L144 2.19941L72.733 2.19941C33.3733 2.19941 1.46603 34.1067 1.46603 73.4664V73.4664Z"
+          fill="#F24E1E"
+        ></path>
+        <path
+          d="M1.46603 216C1.46603 255.36 33.3733 287.267 72.733 287.267H144L144 144.733L72.733 144.733C33.3733 144.733 1.46603 176.641 1.46603 216V216Z"
+          fill="#A259FF"
+        ></path>
+      </svg>
+      <span class="fw-bold">Social Media Content Strategy</span> (Full Version)
+      <i class="bi bi-box-arrow-up-right ps-3"></i>
+    </a>
+  </section>
+
+  <section class="bg-secondary p-4 row">
+    <div class="row">
+      <div class="col-6">
+        <div>
+          <img class="img-fluid" src="/assets/jyan-denim-portrait.png" alt="" />
+        </div>
+      </div>
+      <div class="col-6">
+        <h3 class="fs-5 text-uppercase fw-bold">Background</h3>
+        <p>
+          From 2012-2019 Jan Anhalt opened "JYAN Denim" which specialized in
+          designing, tailoring Japanese denim jeans. Jan gained notariety for
+          extremely high quality and extremely detailed products. Because of
+          loss of a loved one, Jan decided to close his business and pursue his
+          dreams living in Japan and becoming fluent in Japanese. Since 2020 Jan
+          has been living in Japan as an ESL instructor, in his off-time Jan
+          learned front-end development and UI/UX design. Now he resides in
+          Tokyo and enjoys weight-lifting, bouldering and enjoying cigars with
+          coffee or drinks with friends.
+        </p>
+        <p>
+          In the future Jan has a goal to create runway fashion collections
+          using music that has inspired him through out the years.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 pt-4 d-grid">
+      <a
+        type="button"
+        target="_blank"
+        href="https://www.linkedin.com/in/anhaltjan/"
+        class="btn btn-outline-primary"
+        ><i class="bi bi-linkedin p-0 me-2" style="color: #0a66c2"></i>
+        <span class="fw-bold">Connect </span>with Jan Anhalt
+        <i class="bi bi-box-arrow-up-right ps-3"></i>
+      </a>
+    </div>
+  </section>
 </div>
 </section>
       </div>
     </main>
-    <footer class="container-fluid bg-secondary py-4">
-      <div class="container-fluid">
-  <p
-    class="fw-bold text-uppercase text-center bg-primary py-3 px-4 text-secondary"
-  >
+    <footer class=""><div class="container">
+  <p class="text-end py-3 px-4" style="font-size: 0.7rem">
     Jan Anhalt © 2023 All Rights Reserved.
   </p>
 </div>
-
-    </footer>
+</footer>
   </body>
 </html>

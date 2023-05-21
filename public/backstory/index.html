@@ -30,7 +30,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+  <div class="container">
     <div class="d-flex align-items-center gap-1">
       <a class="navbar-brand m-0" href="/">
         <svg
@@ -40,7 +40,7 @@
           viewBox="0 0 265 68"
           fill="none"
         >
-          <rect width="265" height="68" fill="currentColor" />
+          <rect width="265" height="68" fill="#e21c21" />
           <path
             d="M58.32 16.84H52.44L49.48 35.76C49.16 37.72 48.72 42.6 45.84 42.6C44.88 42.6 44.04 41.52 43.88 40.64L39.44 44.96C40.68 46.52 42.72 47.8 44.92 47.8C47.64 47.8 50.28 46.68 52.2 44.4C54.28 41.96 54.72 39.56 55.2 36.76L58.32 16.84ZM79.2269 27.36H73.7069L73.3869 29.2C72.3069 27.6 70.3469 26.72 68.3069 26.72C62.6669 26.72 58.5469 31.88 57.7069 37.08C56.8669 42.4 59.3069 47.64 65.0669 47.64C67.1069 47.64 69.3469 46.76 70.7869 45.2H70.8669L70.5869 47H76.1069L79.2269 27.36ZM67.1469 42.68C64.2669 42.68 62.9869 39.8 63.3869 37.16C63.7869 34.52 66.0269 31.68 68.9069 31.68C71.7869 31.68 73.1069 34.52 72.7069 37.16C72.3069 39.8 70.0269 42.68 67.1469 42.68ZM88.8841 27.36H83.2841L80.1641 47H85.7641L87.2841 37.28C87.6841 34.92 88.3241 31.2 91.6441 31.2C94.8041 31.2 94.2041 34.24 93.8041 36.6L92.1641 47H97.7641L99.6841 35C100.404 30.44 99.4441 26.72 94.1641 26.72C92.1641 26.72 90.1241 27.4 88.6841 29.16H88.6041L88.8841 27.36ZM131.128 40.64L132.448 47H138.728L132.208 16.04H127.648L110.968 47H117.168L120.648 40.64H131.128ZM130.248 35.84H123.088L128.168 24.88H128.248L130.248 35.84ZM149.079 27.36H143.479L140.359 47H145.959L147.479 37.28C147.879 34.92 148.519 31.2 151.839 31.2C154.999 31.2 154.399 34.24 153.999 36.6L152.359 47H157.959L159.879 35C160.599 30.44 159.639 26.72 154.359 26.72C152.359 26.72 150.319 27.4 148.879 29.16H148.799L149.079 27.36ZM167.321 13.08L161.961 47H167.561L169.081 37.28C169.481 34.92 170.121 31.2 173.441 31.2C176.601 31.2 176.001 34.24 175.601 36.6L173.961 47H179.561L181.481 35C182.201 30.44 181.241 26.72 175.961 26.72C173.961 26.72 171.921 27.4 170.481 29H170.401L172.921 13.08H167.321ZM205.243 27.36H199.723L199.403 29.2C198.323 27.6 196.363 26.72 194.323 26.72C188.683 26.72 184.563 31.88 183.723 37.08C182.882 42.4 185.323 47.64 191.083 47.64C193.123 47.64 195.363 46.76 196.803 45.2H196.883L196.603 47H202.122L205.243 27.36ZM193.163 42.68C190.283 42.68 189.003 39.8 189.403 37.16C189.803 34.52 192.043 31.68 194.923 31.68C197.803 31.68 199.123 34.52 198.723 37.16C198.323 39.8 196.043 42.68 193.163 42.68ZM217.14 13.08H211.54L206.18 47H211.78L217.14 13.08ZM224.39 32.08H227.83L228.59 27.36H225.15L226.19 20.72H220.59L219.55 27.36H217.63L216.87 32.08H218.79L216.43 47H222.03L224.39 32.08Z"
             fill="#FFFFFF"
@@ -48,10 +48,13 @@
         </svg>
       </a>
       <div
-        class="bg-primary d-flex px-2 justify-content-center align-items-center"
+        class="d-flex px-2 justify-content-center align-items-center"
         style="height: 52px"
       >
-        <h1 class="h1 fs-6 px-2 text-center text-uppercase m-0 text-secondary">
+        <h1
+          class="px-2 text-center text-uppercase m-0"
+          style="letter-spacing: 1px; font-weight: 800; font-size: 1rem"
+        >
           Backstory
         </h1>
       </div>
@@ -72,42 +75,21 @@
       id="navbarNav"
     >
       <ul
-        style="letter-spacing: 3px"
-        class="navbar-nav gap-3 py-4 fw-bold fs-6 text-uppercase"
+        style="letter-spacing: 3px; font-weight: 100; font-size: 0.8rem"
+        class="navbar-nav gap-3 py-4 text-uppercase"
       >
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/about-jan"
+            >About Jan</a
           >
-            About Jan
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item fw-bold" href="/specialties">
-                Specialties
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item fw-bold" href="/backstory"> Backstory </a>
-            </li>
-            <li>
-              <a class="dropdown-item fw-bold" href="/hobbies-n-likes">
-                Likes & Hobbies
-              </a>
-            </li>
-          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/projects">Projects</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolio">Portfolio</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog">Blog</a>
         </li>
@@ -120,7 +102,7 @@
 </nav>
   
     </header>
-    <main class="position-relative container-fluid">
+    <main class="position-relative container">
       <div class="position-fixed z-3" style="bottom: 77px; right: 68px">
         <div class="ratio ratio-1x1">
           <div>
@@ -159,7 +141,7 @@
                 style="list-style: none"
               >
                 <li>Contact</li>
-                <li>
+                <!--           <li>
                   <a href="/whats-app"
                     ><img src="/assets/sns/wa-icon.png" alt="WhatsApp link"
                   /></a>
@@ -168,7 +150,7 @@
                   <a href="/line"
                     ><img src="/assets/sns/ln-icon.png" alt="LINE link"
                   /></a>
-                </li>
+                </li> -->
                 <li>
                   <a
                     target="_blank"
@@ -205,15 +187,16 @@
                     ><img src="/assets/sns/sc-icon.png" alt="SnapChat link"
                   /></a>
                 </li> -->
-                <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
-                  /></a>
-                </li>
+
                 <li>Work</li>
                 <li>
                   <a target="_blank" href="https://dribbble.com/anhaltjan"
                     ><img src="/assets/sns/dr-icon.png" alt="Dribbble link"
+                  /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="#"
+                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
                   /></a>
                 </li>
                 <!--               <li>
@@ -231,45 +214,162 @@
           </div>
         </section>
         <section class="col-12 col-lg-11">
-<div class="text-uppercase fw-bold container lh-sm gap-3">
-  <h2 class="fs-1 fw-bold bg-primary py-4 text-center text-secondary">
-    menswear designer + marketing = Me
-  </h2>
-
-  <p class="fs-2">
-    I opened a Japanese denim brand “JYAN”. from 2012-2019 - it was a huge
-    failure.
-  </p>
-  <p class="fs-2">But I mastered my craft. tailored jeans for U in 4 hours.</p>
-  <p class="fs-2">
-    I learned sales as a formalwear consultant. the salary was low.
-  </p>
-  <p class="fs-2">
-    now, I’m integrating those strengths & placing them into digital marketing
-    for only companies targeting men!
-  </p>
-  <p class="fs-2 mt-3">let’s create a strategy + content = growth.</p>
-  <p class="fs-2">credentials on <a href="#">linkedin</a></p>
-
-  <a
-    target="_blank"
-    href="https://www.linkedin.com/in/anhaltjan/"
-    class="btn btn-primary rounded-0 py-2 px-4 fw-bold"
-    >Network with me on LinkedIn</a
+<div class="fw-bold container gap-3">
+  <h2
+    style="font-weight: 900"
+    class="fs-1 text-uppercase bg-primary text-white text-center px-4 py-1"
   >
+    Denim designer ➡ digital designer
+  </h2>
+  <p class="fs-3">
+    I am Jan Anhalt a former Japanese denim jeans designer & formalwear fashion
+    consultant currently living in Tokyo, Japan.
+  </p>
+  <ul class="list-group rounded-0">
+    <li class="list-group-item py-4">
+      👖I owned a Japanese denim brand “JYAN”. from 2012-2019, it fell apart.
+    </li>
+    <li class="list-group-item py-4">
+      📈 But I mastered my craft & now I can tailor, design, cut & sew a pair of
+      jeans in 4-6 hours.
+    </li>
+    <li class="list-group-item py-4">
+      💰 I learned sales from selling at farmers markets, as a business owner,
+      fashion consultant, formal wear lead salesman & from my denim brand.
+    </li>
+    <li class="list-group-item py-4">
+      😣 My business failed & I didn't improve my sales because of my one
+      weakness, which was marketing
+    </li>
+    <li class="list-group-item py-4">
+      🥇 So now, I’m integrating those strengths & using them to turn my
+      weakness in digital marketing as my top strength to help industries
+      targeting men!
+    </li>
+    <li class="list-group-item py-4">
+      🖐🏼 Checkout my
+      <a style="color: orangered" href="/portfolio">Portfolio</a> further, I
+      would appreciate it if you took one second to network with me on
+      <a style="color: #0a66c2" href="">LinkedIn</a>.
+    </li>
+  </ul>
+</div>
+<div class="container">
+  <h3 style="font-weight: 900">FAQ</h3>
+  <ul class="list-group rounded-0">
+    <li class="list-group-item py-4">
+      <span class="fw-bold"
+        >Why are you making the career change into Digital Marketing? –</span
+      >
+      “Marketing has been my biggest and most annoying weakness, so I decided to
+      turn it into my greatest skill and main source of income that push me and
+      others to a 7-figure + net worth.
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold"
+        >How long did it take to become a denim designer? –</span
+      >
+      “It took me around 3 years to be fully competent.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Are you knowledgeable in SEO? –</span> “Only the
+      basics such as: meta tags, copyrighting, I’m extremely interested in
+      learning how to use schemas (schemas.org) & Google Tags”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Why were you a denim designer? – </span> “I’ve been
+      a fan of fashion since elementary school. When I was in University, I
+      couldn’t find jeans I liked which motivated me to make my own and it
+      eventually lead me to become a ‘Denim Head’ and eventually a business
+      owner.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Was it hard to close your denim brand? –</span> “No,
+      it was natural. Since I didn’t have the confidence to market myself/brand
+      and was losing money; it was pretty easy."
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Would you start your own brand again – </span>“ Yes,
+      of course. The moment an opportunity arrives or I notice a problem I can
+      provide a solution to, I will.”
+    </li>
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Do you know JavaScript? – </span>“I know Vanilla JS
+      and related Libraries/Frameworks (React, Next.JS) I am not adequately
+      experienced or knowledgeable enough to market this. Web development became
+      a hobby when I moved to Japan.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Why did you move to Japan – </span>“I lost someone
+      very close to me to a rare-form of cancer, this naturally lead my to
+      follow my dream to live in Tokyo and speak Japanese.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold"
+        >Can you help me / give advice to live in Japan – </span
+      >“No, there is a lot of information online Youtubers with Japan & Japanese
+      focused content can give you better advice.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold"
+        >Can you give me advice on starting a brand or fashion consulting? – </span
+      >“Yes, I don't want to but I will provide a 50-minute consultation charge,
+      after that it is $25,000(usd) for 3-months (for both). If you are still in
+      k-12 or university. First consultation is free, after that it is
+      $10,000(usd) for 3-months (For both). Email me at anhalt.dm@gmail.com for
+      more information. I suggest, you take that money and just start it, learn
+      by doing instead."
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Can you teach me web development? – </span> “Yes,
+      the first lesson is free, after that I charge $15,000(usd) for 12-classes
+      (3 months) including homework, projects and at the end you will have a
+      portfolio and the capability to make amazing websites with (blogs or
+      articles) using Netlify, 11ty, Bootstrap, Markdown, Nunjucks, HTML. I will
+      also throw in a free bonus class on how to use Figma for UI/UX design.
+      Email me at anhalt.dm@gmail.com for more information. But, I do suggest
+      save your money by learning on freeCodeCamp.org & YouTube.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Can you teach how to make EC sites? – </span> “No,
+      EC sites are a whole different monster to slay; there is a lot to know. I
+      personally recommend using Shopify, PayPal buttons or equivalents to save
+      a lot of time if you are an entrepreneur.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Do you use ChatGPT? –</span>"Yes of course, what
+      took me 2-4 hours, I can create in 5-10 minutes. After that I can use my
+      brain & creativity to create something awesome; it's an extremely valuable
+      tool.”
+    </li>
+
+    <li class="list-group-item py-4">
+      <span class="fw-bold">Any life advice? – </span> “To gain confidence is
+      the same as building muscle. You must work it under extreme stress in
+      order to grow it, once attained you will be able to flex it in front of
+      others.”
+    </li>
+  </ul>
 </div>
 </section>
       </div>
     </main>
-    <footer class="container-fluid bg-secondary py-4">
-      <div class="container-fluid">
-  <p
-    class="fw-bold text-uppercase text-center bg-primary py-3 px-4 text-secondary"
-  >
+    <footer class=""><div class="container">
+  <p class="text-end py-3 px-4" style="font-size: 0.7rem">
     Jan Anhalt © 2023 All Rights Reserved.
   </p>
 </div>
-
-    </footer>
+</footer>
   </body>
 </html>

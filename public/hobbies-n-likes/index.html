@@ -73,7 +73,7 @@
     >
       <ul
         style="letter-spacing: 3px"
-        class="navbar-nav gap-3 py-4 fw-bold fs-6 text-uppercase"
+        class="navbar-nav gap-3 py-4 fw-bold text-uppercase"
       >
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="/">Home</a>
@@ -97,16 +97,35 @@
             <li>
               <a class="dropdown-item fw-bold" href="/backstory"> Backstory </a>
             </li>
-            <li>
-              <a class="dropdown-item fw-bold" href="/hobbies-n-likes">
-                Likes & Hobbies
-              </a>
-            </li>
           </ul>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/portfolio">Portfolio</a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Portfolio
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item fw-bold" href="/social-media-marketing">
+                Social Media Marketing
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" href="/website-development"
+                >Website Development</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item fw-bold" href="/website-design"
+                >Website Design</a
+              >
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/blog">Blog</a>
@@ -120,7 +139,7 @@
 </nav>
   
     </header>
-    <main class="position-relative container-fluid">
+    <main class="position-relative container">
       <div class="position-fixed z-3" style="bottom: 77px; right: 68px">
         <div class="ratio ratio-1x1">
           <div>
@@ -240,94 +259,843 @@
     width: 100%;
   "
 >
-  <div class="container" >
-    <h2 class="fs-1 fw-bold bg-primary py-4 text-center text-secondary" >
+  <div class="container">
+    <h2 class="fs-1 fw-bold bg-primary py-4 text-center text-secondary">
       Little more about me
     </h2>
+
+    <h3
+      style="width: fit-content"
+      class="fs-2 bg-primary py-2 px-4 fw-bold text-secondary"
+    >
+      Brands I
+      <span style="color: red"><i class="bi bi-heart-fill"></i></span> &
+      currently use
+    </h3>
+
+    <ul class="row m-0 p-0 py-2 g-4">
+      <!-- Bulk Homme -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="img-fluid rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/gif/BULK-HOMME-Gif-1.webp"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Bulk HOMME</h5>
+            <p>
+              <small style="font-size: 0.65rem">Men's Skincare</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://bulkhomme.com/us/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.amazon.com/stores/BULKHOMME/page/41499A0A-2A69-4CBD-AAAB-7D4ADFAC7292?ref_=ast_bln"
+                  class="text-secondary"
+                  ><i class="bi bi-bag"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/bulkhomme/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- hyakuichi 101 -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt="hyakuichi"
+              style="object-fit: cover"
+              src="/assets/hyakuichi.webp"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">HYAKUICHI</h5>
+            <p>
+              <small style="font-size: 0.65rem">Watches</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://info-as.wixsite.com/hyakuichi"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://info-as.wixsite.com/hyakuichi/online-shop"
+                  class="text-secondary"
+                  ><i class="bi bi-bag"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/hyakuichi.watch/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Sailor pens -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/sailor.png"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Sailor</h5>
+            <p>
+              <small style="font-size: 0.65rem">Pens & Pencils</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://en.sailor.co.jp/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.amazon.com/stores/BULKHOMME/page/41499A0A-2A69-4CBD-AAAB-7D4ADFAC7292?ref_=ast_bln"
+                  class="text-secondary"
+                  ><i class="bi bi-bag"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/bulkhomme/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Daniel Hechter -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/hechter-paris.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Hechter Paris</h5>
+            <p>
+              <small style="font-size: 0.65rem">menswear</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.hechter.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.hechter.de/"
+                  class="text-secondary"
+                  ><i class="bi bi-bag"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/hechterparis/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Spine Optics -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/spine-optics.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Spine Optics</h5>
+            <p>
+              <small style="font-size: 0.65rem">Eyewear</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/spine_optics/?hl=en"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Ties.com -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/ties-dot-com.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Ties.com</h5>
+            <p>
+              <small style="font-size: 0.65rem">Men's Accessories</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.ties.com/about"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/tiesdotcom/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- Music -->
+    <h3
+      style="width: fit-content"
+      class="fs-2 bg-primary py-2 px-4 fw-bold text-secondary"
+    >
+      Groups/DJs I
+      <span style="color: red"><i class="bi bi-heart-fill"></i></span>
+    </h3>
+
+    <ul class="row m-0 p-0 py-2 g-4">
+      <!-- TOVI -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="img-fluid rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/tovi.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">TOVI</h5>
+            <p>
+              <small style="font-size: 0.65rem">Synth-Rock</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://tovimusic.bandcamp.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-music-note-beamed"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://music.apple.com/jp/artist/tovi/1331120138"
+                  class="text-secondary"
+                  ><i class="bi bi-apple"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/tovimusic/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Capsule -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="img-fluid rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/500px-capsule.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Capsule</h5>
+            <p>
+              <small style="font-size: 0.65rem">J-Pop | Electronic</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.capsule-official.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UC6_nCTeHCfZMJ9_Ae1nOW3g"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/capsuleofficial_ig/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nakata Yasutaka -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt="hyakuichi"
+              style="object-fit: cover"
+              src="/assets/nakata-yasutaka.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5 fw-bold">中田ヤスタカ</h5>
+            <p>
+              <small style="font-size: 0.65rem">J-Pop | DJ</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="http://yasutaka-nakata.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@YasutakaNakataOfficial/featured"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/yasutaka_nakata/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- STP -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/stp.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">STP</h5>
+            <p>
+              <small style="font-size: 0.65rem">Rock</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://stonetemplepilots.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCocfdCiKujljqcGC-STMsCQ"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/stpband/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- Richie Hawtin -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/richie-hawtin.webp"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Richie Hawtin</h5>
+            <p>
+              <small style="font-size: 0.65rem">Techno | DJ</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://soundcloud.com/richiehawtin"
+                  class="text-secondary"
+                  ><i class="bi bi-music-note-beamed"></i>
+                </a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UC2tkpbU5ELaFXI2Bn2WnaJg"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/richiehawtin/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- The Prodigy -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/the-prodigy.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">The Prodigy</h5>
+            <p>
+              <small style="font-size: 0.65rem">Big Beat | Electronic</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://theprodigy.tmstor.es/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UC7IZbkKDd20v6Ni_vFX63rQ"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/theprodigyofficial/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- dfa1979 -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/dfa.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">DFA1979</h5>
+            <p>
+              <small style="font-size: 0.65rem">Rock</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://shop.deathfromabove1979.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCg5wtQ2hBMYChHeskNKLafQ"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/dfa1979/?hl=en"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <!-- Arcade Fire -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="card-img-top rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/arcade-fire.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Arcade Fire</h5>
+            <p>
+              <small style="font-size: 0.65rem">Indie | Rock</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.ties.com/about"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/channel/UCIIGxQ6BA9MwIJXBu47SyZQ"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/arcadefire/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Youtubers | influencers -->
+    <h3
+      style="width: fit-content"
+      class="fs-2 bg-primary py-2 px-4 fw-bold text-secondary"
+    >
+      Youtubers & Influencers I
+      <span style="color: red"><i class="bi bi-heart-fill"></i></span>
+    </h3>
+
     <ul class="row g-3 p-0" style="list-style: none">
-      <li class=" col-12 text-uppercase"><h3 style="width: fit-content;" class="fs-2 bg-primary py-2 px-4 fw-bold text-secondary ">Hobbies</h3> </li>
-      <li class="col-6">
-            <a href=""><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-            <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-            </div>
-            </div>
-      </a>
+      <!-- Alex Hormozi -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="img-fluid rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/a-hormozi.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Alex Hormozi</h5>
+            <p>
+              <small style="font-size: 0.65rem">Entrepreneur</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.acquisition.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@AlexHormozi"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/hormozi/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </li>
-      <li class=" col-12 text-uppercase"><h3 style="width: fit-content;" class="fs-2 bg-primary py-2 px-4 fw-bold text-secondary ">Brands I currently use</h3> </li>
-      <li class="col-6">
-            <a href=""><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-            <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-            </div>
-            </div>
-      </a>
+      <!-- Leila Hormozi -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="img-fluid rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/l-hormozi.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Leila Hormozi</h5>
+            <p>
+              <small style="font-size: 0.65rem">Entrepreneur</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.acquisition.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@leilahormozi"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/leilanhormozi/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </li>
-      <li class=" col-12 text-uppercase"><h3 style="width: fit-content;" class="fs-2 bg-primary py-2 px-4 fw-bold text-secondary ">Groups/DJs I <i class="bi bi-heart-fill"></i>
-      </h3> </li>
-      <li class="col-6">
-            <a href=""><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-            <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                  <h5 class="fs-1 card-title">Capsule</h5>
-                  <p class="card-text">Since 2007</p>
-                  <a class="card-text"><small class="text-body-secondary">Youtube</small></a>
-            </div>
-            </div>
-            </div>
-      </a>
+      <!-- Gary Vaynerchuck -->
+      <li class="col-12 col-md-6 col-lg-3 col-xl-2">
+        <div class="card card bg-primary border-0 rounded-0 p-0">
+          <div class="ratio ratio-1x1">
+            <img
+              class="img-fluid rounded-0"
+              alt=""
+              style="object-fit: cover"
+              src="/assets/gary-vee.jpg"
+            />
+          </div>
+          <div class="card-body text-secondary text-center text-uppercase">
+            <h5 class="fs-5">Gary Vee</h5>
+            <p>
+              <small style="font-size: 0.65rem">Entrepreneur</small>
+            </p>
+          </div>
+          <div class="card-footer rounded-0">
+            <ul class="row p-0 text-center" style="list-style: none">
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="http://garyvaynerchuk.com/"
+                  class="text-secondary"
+                  ><i class="bi bi-code-slash"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@garyvee"
+                  class="text-secondary"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </li>
+              <li class="col">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/garyvee/"
+                  class="text-secondary"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </li>
-      <li class="col-6">
-            <a href=""><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-            <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                  <h5 class="fs-1 card-title">Richie Hawtin</h5>
-                  <p class="card-text">Since 1997</p>
-                  <a class="card-text"><small class="text-body-secondary">Youtube</small></a>
-            </div>
-            </div>
-            </div>
-      </a>
-      </li>
-      </ul>
+    </ul>
   </div>
 </div>
 </section>
       </div>
     </main>
-    <footer class="container-fluid bg-secondary py-4">
-      <div class="container-fluid">
+    <footer class="bg-secondary py-4"><div class="container-fluid bg-primary">
   <p
     class="fw-bold text-uppercase text-center bg-primary py-3 px-4 text-secondary"
   >
     Jan Anhalt © 2023 All Rights Reserved.
   </p>
 </div>
-
-    </footer>
+</footer>
   </body>
 </html>

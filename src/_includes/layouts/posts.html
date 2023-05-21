@@ -2,7 +2,21 @@
 layout: /layouts/base.html
 ---
 
-<article class="container">
+<article class="container" style="max-width: 90ch; text-align: justify">
   {{ content | safe }}
-  <a href="../../" class="btn btn-secondary">back to blog</a>
+
+  <a
+    target="_blank"
+    href="/"
+    style="background-color: orangered"
+    class="btn btn-primary text-uppercase my-4 border-0 rounded-0 fw-bold text-decoration-underline"
+    >Go home</a
+  >
+  <a
+    target="_blank"
+    href="https://www.linkedin.com/in/anhaltjan/"
+    style="background-color: #0a66c2"
+    class="btn btn-primary text-uppercase border-0 rounded-0 fw-bold text-decoration-underline"
+    >Network with me on LinkedIn</a
+  >
 </article>
