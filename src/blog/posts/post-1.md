@@ -2,8 +2,8 @@
 layout: layouts/posts.html
 title: Too much competition doesn't exist.
 image: /assets/blogs/blog-1-no-competition-5-23-2023.jpg
-date: '2023-05-10'
-time: '12:00AM'
+date: '2023-05-23'
+time: '12:00PM'
 author: Jan Anhalt
 permalink: 'subdir/{{ title | slugify }}/index.html'
 
@@ -14,6 +14,7 @@ tags:
   <div class="bg-black d-flex align-items-center justify-content-center">
     <img class="img-fluid" style="max-width: 300px;" src="{{ image }}" alt="image about having no competition but just starting with no experience">
 </div>
+
 ### If you don’t know me, you will now. I'm Jan Anhalt a former Japanese denim jeans designer & formalwear fashion consultant currently living in Japan.
 
 ### My aim is helping brands targeting males by auditing optimizing their branding and social media strategy, so in the end they can make more money and help more men.. That's all, easy.
