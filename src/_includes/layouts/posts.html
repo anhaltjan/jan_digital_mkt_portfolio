@@ -5,18 +5,16 @@ layout: /layouts/base.html
 <article class="container" style="max-width: 90ch; text-align: justify">
   {{ content | safe }}
 
-  <a
-    target="_blank"
-    href="/"
-    style="background-color: orangered"
-    class="btn btn-primary text-uppercase my-4 border-0 rounded-0 fw-bold text-decoration-underline"
-    >Go home</a
+  <a target="_blank" href="/" class="btn btn-outline-primary my-"
+    ><i class="bi bi-arrow-90deg-left"></i> Go back home</a
   >
   <a
+    type="button"
     target="_blank"
     href="https://www.linkedin.com/in/anhaltjan/"
-    style="background-color: #0a66c2"
-    class="btn btn-primary text-uppercase border-0 rounded-0 fw-bold text-decoration-underline"
-    >Network with me on LinkedIn</a
-  >
+    class="btn btn-outline-primary my-4"
+    ><i class="bi bi-linkedin p-0 me-2" style="color: #0a66c2"></i>
+    <span class="fw-bold">Connect </span>with Jan Anhalt
+    <i class="bi bi-box-arrow-up-right ps-3"></i>
+  </a>
 </article>
