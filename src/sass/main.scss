@@ -1,9 +1,9 @@
-$primary: #0c0d19;
-$secondary: #f5efeb;
-$info: #e21c21;
-$danger: #ff0000;
-$body-bg: #ffffff;
-$body-color: #0c0d19;
+$primary: #a49a77;
+$secondary: #e21c21;
+$body-bg: #181818;
+$body-color: #fff;
+$dark: #212529;
+$light: #efefef;
 
 $display-font-sizes: (
   1: 1.875rem,
@@ -16,3 +16,68 @@ $display-font-sizes: (
 
 //import Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+/* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* NOTO SANS JP */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $body-bg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c2b68b;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b4a981;
+}
+
+/* Text Selection Color */
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #a49a77;
+}
+::selection {
+  color: #000000;
+  background: rgba(164, 147, 119, 0.5);
+}
+
+.navbar-hover:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.offcanvas-body a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

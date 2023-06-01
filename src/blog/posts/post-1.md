@@ -11,10 +11,10 @@ tags:
   - blog
 ---
 
-  <div class="bg-black d-flex align-items-center justify-content-center">
-    <img class="img-fluid" style="max-width: 300px;" src="{{ image }}" alt="image about having no competition but just starting with no experience">
+<div class="bg-black d-flex align-items-center justify-content-center">
+  <img class="img-fluid" style="max-width: 300px;" src="{{ image }}" alt="image about having no competition but just starting with no experience">
 </div>
-
+<br/>
 ### If you don’t know me, you will now. I'm Jan Anhalt a former Japanese denim jeans designer & formalwear fashion consultant currently living in Japan.
 
 ### My aim is helping brands targeting males by auditing optimizing their branding and social media strategy, so in the end they can make more money and help more men.. That's all, easy.

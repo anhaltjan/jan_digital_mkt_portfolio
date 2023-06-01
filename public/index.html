@@ -29,284 +29,310 @@
     <!-- CTA banner -->
 
     <header>
-      <nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <div>
-      <a class="navbar-brand" href="/">
-        <img style="max-width: 125px" src="/assets/brand-logo.png" alt="" />
-      </a>
-
-      <h1
-        class="text-uppercase m-0 p-0 pt-1 text-info"
-        style="letter-spacing: 1.5px; font-weight: 800; font-size: 0.75rem"
-      >
-        Home
-      </h1>
-    </div>
+      <nav class="navbar fixed-top navbar-hover">
+  <div class="container-fluid px-5">
     <button
-      class="navbar-toggler border-primary py-2 px-4 rounded-0"
+      class="navbar-toggler border-0 rounded-0 border-light"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="text-light">Menu</span>
     </button>
-    <div
-      class="collapse navbar-collapse align-items-center justify-content-end"
-      id="navbarNav"
-    >
-      <ul
-        style="letter-spacing: 3px; font-weight: 400; font-size: 0.8rem"
-        class="navbar-nav gap-3 py-4 text-uppercase"
-      >
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/about-jan"
-            >About Jan</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/projects">Projects</a>
-        </li>
+    <a class="navbar-brand text-white fw-bold text-uppercase fs-2 m-0" href="#"
+      >Jan Anhalt
+      <img class="img-fluid" width="50px" src="assets/pistola-gold.png" alt=""
+    /></a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Jan Anhalt</h5>
+        <button
+          type="button"
+          class="btn btn-light btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div>
+        <img
+          class="img-fluid"
+          src="../assets/social-media-profile.png"
+          alt=""
+        />
+      </div>
+      <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <ul
+          class="navbar-nav justify-content-start flex-grow-1 pe-3 text-light"
+        >
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Works & Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              About Jan
+            </a>
+            <ul class="dropdown-menu border-primary border-1 rounded-0">
+              <li><a class="dropdown-item" href="#">Bio & Dreams</a></li>
+              <li>
+                <hr class="dropdown-divider bg-primary" />
+              </li>
+              <li><a class="dropdown-item" href="#">Follow My life</a></li>
+              <li>
+                <hr class="dropdown-divider bg-primary" />
+              </li>
+              <li><a class="dropdown-item" href="#">Favourite Brands</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Contact
+            </a>
+            <ul class="dropdown-menu border-primary border-1 rounded-0">
+              <li><a class="dropdown-item" href="#">Bio & Dreams</a></li>
+              <li>
+                <hr class="dropdown-divider bg-primary" />
+              </li>
+              <li><a class="dropdown-item" href="#">Follow My life</a></li>
+              <li>
+                <hr class="dropdown-divider bg-primary" />
+              </li>
+              <li><a class="dropdown-item" href="#">Favourite Brands</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-between px-5">
+          <a href="#" class="p-3">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" class="p-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#" class="p-3"> <i class="bi bi-twitter"></i> </a>
+          <a href="#" class="p-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
   
     </header>
-    <main class="position-relative container">
-      <div class="position-fixed z-3" style="bottom: 77px; right: 68px">
-        <div class="ratio ratio-1x1">
-          <div>
-            <a
-              class="btn btn-info rounded-0 d-lg-none"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasResponsive"
-              aria-controls="offcanvasResponsive"
-            >
-              <i class="fs-1 text-secondary bi bi-three-dots-vertical"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <section
-          class="col-1 offcanvas-lg offcanvas-start text-center"
-          tabindex="-1"
-          id="offcanvasResponsive"
-          aria-labelledby="offcanvasResponsiveLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="fs-5 text-uppercase fw-bold text-start">Social Media</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              data-bs-target="#offcanvasResponsive"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <div class="">
-              <ul
-                class="d-flex flex-column gap-4 p-0 fw-bold text-uppercase"
-                style="list-style: none"
-              >
-                <li>Contact</li>
-                <!--           <li>
-                  <a href="/whats-app"
-                    ><img src="/assets/sns/wa-icon.png" alt="WhatsApp link"
-                  /></a>
-                </li>
-                <li>
-                  <a href="/line"
-                    ><img src="/assets/sns/ln-icon.png" alt="LINE link"
-                  /></a>
-                </li> -->
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/anhaltjan/"
-                    ><img src="/assets/sns/li-icon.png" alt="LinkedIn link"
-                  /></a>
-                </li>
-                <li>Media</li>
-                <li>
-                  <a target="_blank" href="https://twitter.com/AnhaltJan"
-                    ><img src="/assets/sns/tw-icon.png" alt="Twitter link"
-                  /></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://instagram.com/jan.anhalt?igshid=ZDdkNTZiNTM=
-                  "
-                    ><img src="/assets/sns/ig-icon.png" alt="Instagram link"
-                  /></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.youtube.com/@anhaltjan"
-                    ><img src="/assets/sns/yt-icon.png" alt="YouTube"
-                  /></a>
-                </li>
-                <!--               <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/tt-icon.png" alt=""
-                  /></a>
-                </li> -->
-                <!--           <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/sc-icon.png" alt="SnapChat link"
-                  /></a>
-                </li> -->
-
-                <li>Work</li>
-                <li>
-                  <a target="_blank" href="https://dribbble.com/anhaltjan"
-                    ><img src="/assets/sns/dr-icon.png" alt="Dribbble link"
-                  /></a>
-                </li>
-                <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/pt-icon.png" alt="Pinterest link"
-                  /></a>
-                </li>
-                <!--               <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/dr-icon.png" alt=""
-                  /></a>
-                </li> -->
-                <!--          <li>
-                  <a target="_blank" href="#"
-                    ><img src="/assets/sns/dr-icon.png" alt=""
-                  /></a>
-                </li> -->
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="col-12 col-lg-11">
-<section>
-  <div class="row align-items-center">
-    <div class="col-3 col-md-3 col-lg-2">
-      <a
-        class="ratio ratio-1x1"
-        style="max-width: 150px"
-        target="_blank"
-        href="https://www.instagram.com/jan.anhalt/?igshid=ZDdkNTZiNTM%3D"
-      >
-        <img
-          style="object-fit: cover; object-position: center"
-          class="rounded-circle border border-1 border-primary"
-          src="/assets/social-media-profile.png"
-          alt=""
-      /></a>
+    <main class="container-fluid">
+<section class="row g-0">
+  <div class="col-12 position-relative">
+    <div class="ratio ratio-4x3">
+      <img
+        src="assets/portrait-day.jpg"
+        class="img-fluid position-absolute"
+        style="object-fit: cover; object-position: center"
+        alt=""
+      />
     </div>
-    <div class="col-9 col-md-9 col-lg-6 py-5">
-      <h2 class="fs-4 text-uppercase fw-bold mb-2">Jan Anhalt</h2>
-      <div class="row g-2">
-        <div class="col col-sm-4 col-md-4 d-grid">
-          <!-- blogs -->
-          <a
-            href="/blog"
-            type="button"
-            class="btn btn-outline-primary position-relative"
-          >
-            <span class="fw-bold">1</span> Blog(s)
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info z-3"
-            >
-              NEW
-              <span class="visually-hidden">unread messages</span>
-            </span>
-          </a>
-        </div>
-        <div class="col col-sm-4 col-md-4 d-grid">
-          <!-- projects -->
-          <a
-            href="/projects"
-            type="button"
-            class="btn btn-outline-primary position-relative"
-          >
-            <span class="fw-bold">0</span> Project(s)
-            <span
-              class="visually-hidden"
-              class="position-absolute z-3 top-0 start-100 translate-middle badge rounded-pill bg-info"
-            >
-              NEW
-            </span>
-          </a>
-        </div>
-        <div class="col col-sm-4 col-md-4 d-grid">
-          <!-- videos -->
-          <a
-            href="#"
-            type="button"
-            class="btn btn-outline-primary position-relative"
-          >
-            <span class="fw-bold">0</span> Videos
-            <!--           <span
-            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info"
-          >
-            NEW
-            <span class="visually-hidden">unread messages</span>
-          </span> -->
-          </a>
-        </div>
+
+    <div class="position-absolute top-50 end-0 translate-middle-y z-1">
+      <div class="rounded-3 pe-5 text-end">
+        <h1
+          style="letter-spacing: 2px"
+          class="display-5 fw-bold text-uppercase"
+        >
+          Overcome Insecurity
+        </h1>
+        <p class="fw-bold">
+          I'm on a life mission to take back my Masculinity.
+        </p>
+        <button
+          class="btn btn-outline-primary text-light px-5 border-2 rounded-0"
+        >
+          Learn my plan
+        </button>
       </div>
     </div>
-    <div class="col-12" style="max-width: 85ch; text-align: justify">
-      <p class="fw-bold">
-        <span>Digital Marketing</span> →
-        <span class="text-info"> Social Media Specialist</span>
-      </p>
+    <div
+      class="position-absolute"
+      style="
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.73)
+        );
 
-      <p class="fw-bold">
-        Men's Brands ・ Men's street/formalwear ・ Men's health ・ Male
-        lifestyle improvement
-      </p>
-      <p>
-        The aim is to dive deep into brands and help them target male clients
-        and customers by auditing & optimizing their branding, social media
-        strategy, schedule, copywriting, etc... so in the end they can
-        <span class="fw-bolder"
-          >make more money and help more men.. That's it.</span
-        >
-      </p>
+        background-size: cover;
+
+        bottom: 0;
+        top: 0%;
+        left: 0;
+        right: 0;
+      "
+    ></div>
+  </div>
+</section>
+<section class="row g-0">
+  <div class="col-12 col-lg-6">
+    <div class="ratio ratio-1x1">
+      <img
+        class="img-fluid object-fit-cover"
+        style=""
+        src="assets/main-portrait.jpg"
+        alt=""
+      />
     </div>
   </div>
+  <div class="col-12 col-lg-6 py-3">
+    <div
+      style="height: 100%"
+      class="d-flex flex-column justify-content-center align-items-center gap-2"
+    >
+      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
+        This is a title
+      </h2>
+      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
 
-  <p class="text-start fs-5 mb-4"></p>
-</section>
-<section class="container">
-  <!--   <div class="ratio ratio-16x9">
-    <iframe
-      src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-      title="YouTube video"
-      allowfullscreen
-    ></iframe>
-  </div> -->
-</section>
-</section>
+      <div>
+        <button class="btn btn-outline-primary text-light rounded-0 px-5">
+          Click here
+        </button>
       </div>
-    </main>
-    <footer><div class="container-fluid py-4 mt-5">
-  <p class="text-center m-0 p-0" style="font-size: 0.7rem">
-    Jan Anhalt - Helping male-focused brands ++1 Followers & ++１ Sales .
-  </p>
+    </div>
+  </div>
+</section>
+<section class="row g-0">
+  <div class="order-1 col-lg-6 py-3">
+    <div
+      style="height: 100%"
+      class="d-flex flex-column justify-content-center align-items-center gap-2"
+    >
+      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
+        This is a title
+      </h2>
+      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
+
+      <div>
+        <button class="btn btn-outline-primary text-light rounded-0 px-5">
+          Click here
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="order-lg-2 col-lg-6">
+    <div class="ratio ratio-1x1">
+      <img
+        class="img-fluid object-fit-cover"
+        style=""
+        src="assets/main-portrait.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+<section class="row g-0">
+  <div class="col-12 col-lg-6">
+    <div class="ratio ratio-1x1">
+      <img
+        class="img-fluid object-fit-cover"
+        style=""
+        src="assets/main-portrait.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="col-12 col-lg-6 py-3">
+    <div
+      style="height: 100%"
+      class="d-flex flex-column justify-content-center align-items-center gap-2"
+    >
+      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
+        This is a title
+      </h2>
+      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
+
+      <div>
+        <button class="btn btn-outline-primary text-light rounded-0 px-5">
+          Click here
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="row g-0">
+  <div class="order-1 col-lg-6 py-3">
+    <div
+      style="height: 100%"
+      class="d-flex flex-column justify-content-center align-items-center gap-2"
+    >
+      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
+        This is a title
+      </h2>
+      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
+
+      <div>
+        <button class="btn btn-outline-primary text-light rounded-0 px-5">
+          Click here
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="order-lg-2 col-lg-6">
+    <div class="ratio ratio-1x1">
+      <img
+        class="img-fluid object-fit-cover"
+        style=""
+        src="assets/main-portrait.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+</main>
+    <footer class="container-fluid"><div class="container-fluid py-4">
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="d-flex align-items-center gap-2">
+        <h5 class="fw-bold text-uppercase m-0">Jan Anhalt</h5>
+        <img style="height: 20px" src="../assets/pistola-gold.png" alt="" />
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div
+        style="height: 100%"
+        class="d-flex justify-content-end align-items-center"
+      >
+        <a href="#" class="px-4">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" class="px-4">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="#" class="px-4"> <i class="bi bi-twitter"></i> </a>
+        <a href="#" class="px-4">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 </footer>
   </body>
