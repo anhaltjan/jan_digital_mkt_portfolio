@@ -2,8 +2,6 @@ $primary: #a49a77;
 $secondary: #e21c21;
 $body-bg: #181818;
 $body-color: #fff;
-$dark: #212529;
-$light: #efefef;
 
 $display-font-sizes: (
   1: 1.875rem,
@@ -18,24 +16,28 @@ $display-font-sizes: (
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 /* POPPINS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+ */
 /* ROBOTO */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 /* NOTO SANS JP */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 h1,
-h2 {
-  font-family: 'Poppins', sans-serif;
+h2,
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-h3,
 h4,
 h5,
 h6 {
