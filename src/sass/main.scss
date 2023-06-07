@@ -1,47 +1,40 @@
 $primary: #a49a77;
-$secondary: #e21c21;
+$secondary: #848482;
+$light: #efefef;
+$dark: #181818;
 $body-bg: #181818;
-$body-color: #fff;
+$body-color: #efefef;
 
-$display-font-sizes: (
-  1: 1.875rem,
-  2: 5.5rem,
-  3: 5.5rem,
-  4: 4rem,
-  5: 3rem,
-  6: 2.5rem,
+$custom-colors: (
+  'bronze-gradient': linear-gradient(135.74deg, #d6b196 3.74%, #735037 119.76%),
+  'silver-gradient': linear-gradient(135.74deg, #f8f7f7 3.74%, #9d9d9d 119.76%),
+  'gold-gradient': linear-gradient(90.22deg, #f1dfaf 3.74%, #a49a77 119.76%),
+  'black-gradient': linear-gradient(94.8deg, #5a5a5a 1.33%, #000000 119.76%),
+  'white-bg:': #fefefe,
+  'paper-white-bg': #f9fbff,
 );
 
 //import Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-/* POPPINS */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
- */
-/* ROBOTO */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+/* Inter - GF reg400 med500 semibold600 bold700 xtrabold800 black900 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
 
-/* NOTO SANS JP */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+/* Raleway reg400 med500 semibold600 bold700 w.italics */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* Courier Prime reg400 bold700 w.italics */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: 'Courier Prime', monospace; */
 
 * {
   font-family: 'Inter', sans-serif;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', sans-serif;
+p {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* width */
@@ -67,11 +60,11 @@ h6 {
 /* Text Selection Color */
 ::-moz-selection {
   /* Code for Firefox */
-  color: #fff;
-  background: #a49a77;
+  color: $body-bg;
+  background: $primary;
 }
 ::selection {
-  color: #000000;
+  color: #181818;
   background: rgba(164, 147, 119, 0.5);
 }
 

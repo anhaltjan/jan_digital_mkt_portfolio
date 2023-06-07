@@ -9,7 +9,7 @@
     <header>
       {% include "baseheader.html" %} {% block header %} {% endblock %}
     </header>
-    <main class="container-fluid">{{ content | safe }}</main>
-    <footer class="container-fluid">{% include "basefooter.html" %}</footer>
+    <main>{{ content | safe }}</main>
+    <footer>{% include "basefooter.html" %}</footer>
   </body>
 </html>

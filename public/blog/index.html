@@ -33,7 +33,7 @@
       <nav class="navbar fixed-top navbar-hover">
   <div class="container-fluid px-5">
     <button
-      class="navbar-toggler border-primary rounded-0"
+      class="navbar-toggler border-secondary rounded-0"
       style="background-color: rgba(0, 0, 0, 0.3)"
       type="button"
       data-bs-toggle="offcanvas"
@@ -44,32 +44,45 @@
       <span class="text-light">Menu</span>
     </button>
     <a
-      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-white fw-bold fst-italic text-uppercase fs-2 m-0"
-      href="#"
+      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
+      href="/"
       >Jan Anhalt
-      <img class="img-fluid" width="30px" src="assets/pistola-gold.png" alt=""
+      <img
+        class="img-fluid"
+        width="30px"
+        src="/assets/pistola-gold.png"
+        alt="gold gradient pistol"
     /></a>
 
     <div
-      class="offcanvas offcanvas-start"
+      class="offcanvas offcanvas-start bg-light text-dark"
       tabindex="-1"
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
     >
-      <div class="offcanvas-header">
+      <div
+        class="offcanvas-header d-flex justify-content-between align-items-center"
+      >
         <h4
-          style="font-style: italic"
-          class="offcanvas-title text-uppercase"
+          class="offcanvas-title text-uppercase fs-2 fst-italic fw-bold d-flex gap-2 justify-content-between align-items-center"
           id="offcanvasNavbarLabel"
         >
           Jan Anhalt
+          <img
+            class="img-fluid"
+            width="30px"
+            src="/assets/pistola-gold.png"
+            alt="gold gradient pistol"
+          />
         </h4>
         <button
           type="button"
-          class="btn-close bg-primary rounded-0"
+          class="btn bg-gold-gradient text-light rounded-0"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-        ></button>
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
       </div>
       <div>
         <img
@@ -175,7 +188,7 @@
 </nav>
   
     </header>
-    <main class="container-fluid">
+    <main>
 <div class="container-fluid">
   <h2 class="fs-4 text-uppercase fw-bold text-start">
     My Opinions + Experiences
@@ -197,7 +210,7 @@
     </li></ul>
 </div>
 </main>
-    <footer class="container-fluid"><div class="container-fluid py-4 border-top border-primary">
+    <footer><div class="container-fluid py-4 border-top border-primary">
   <div class="row">
     <div class="col-12 col-md-3 mb-3">
       <div

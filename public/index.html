@@ -33,7 +33,7 @@
       <nav class="navbar fixed-top navbar-hover">
   <div class="container-fluid px-5">
     <button
-      class="navbar-toggler border-primary rounded-0"
+      class="navbar-toggler border-secondary rounded-0"
       style="background-color: rgba(0, 0, 0, 0.3)"
       type="button"
       data-bs-toggle="offcanvas"
@@ -44,32 +44,45 @@
       <span class="text-light">Menu</span>
     </button>
     <a
-      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-white fw-bold fst-italic text-uppercase fs-2 m-0"
-      href="#"
+      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
+      href="/"
       >Jan Anhalt
-      <img class="img-fluid" width="30px" src="assets/pistola-gold.png" alt=""
+      <img
+        class="img-fluid"
+        width="30px"
+        src="/assets/pistola-gold.png"
+        alt="gold gradient pistol"
     /></a>
 
     <div
-      class="offcanvas offcanvas-start"
+      class="offcanvas offcanvas-start bg-light text-dark"
       tabindex="-1"
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
     >
-      <div class="offcanvas-header">
+      <div
+        class="offcanvas-header d-flex justify-content-between align-items-center"
+      >
         <h4
-          style="font-style: italic"
-          class="offcanvas-title text-uppercase"
+          class="offcanvas-title text-uppercase fs-2 fst-italic fw-bold d-flex gap-2 justify-content-between align-items-center"
           id="offcanvasNavbarLabel"
         >
           Jan Anhalt
+          <img
+            class="img-fluid"
+            width="30px"
+            src="/assets/pistola-gold.png"
+            alt="gold gradient pistol"
+          />
         </h4>
         <button
           type="button"
-          class="btn-close bg-primary rounded-0"
+          class="btn bg-gold-gradient text-light rounded-0"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
-        ></button>
+        >
+          <i class="bi bi-x-lg"></i>
+        </button>
       </div>
       <div>
         <img
@@ -175,14 +188,16 @@
 </nav>
   
     </header>
-    <main class="container-fluid">
+    <main>
+<!-- HERO -->
 <section class="row g-0">
   <div class="col-12 position-relative">
-    <div style="height: 100vh" class="">
+    <div style="height: 100vh">
       <img
         src="assets/portrait-day.jpg"
         class="img-fluid"
         style="
+          filter: grayscale(100%);
           object-fit: cover;
           object-position: center;
           height: 100%;
@@ -191,24 +206,68 @@
         alt=""
       />
     </div>
-
     <div class="position-absolute top-50 end-0 translate-middle-y z-1">
-      <div class="rounded-3 pe-5 text-end">
+      <div class="rounded-3 me-5">
         <h1
-          style="letter-spacing: 2px"
-          class="display-5 fw-semibold fst-italic text-uppercase"
+          style="font-weight: 900"
+          class="display-5 text-white text-end text-uppercase fst-italic"
         >
-          Like it or not. I'm all in
+          The men you
+          <span
+            class="pe-2"
+            style="
+              background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+            "
+            >seek</span
+          ><br />
+          Neet to see
+          <span
+            class="pe-2"
+            style="
+              background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+            "
+            >value</span
+          ><br />
+          before they
+          <span
+            class="pe-2"
+            style="
+              background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              text-fill-color: transparent;
+            "
+            >spend</span
+          >.
         </h1>
-        <p class="fw-semi-bold">
-          I'm on a mission to overcome insecurity, <br />
-          and attain the apsirations I desire.
-        </p>
-        <button
-          class="btn btn-outline-primary text-light px-5 border-2 rounded-0"
+        <p
+          class="text-end fw-semibold"
+          style="max-width: 600px; line-height: 30px"
         >
-          Read about My Journey
-        </button>
+          <span class="fs-5 fw-bold fst-italic text-uppercase"
+            >Jan Anhalt -
+          </span>
+          With more than a decade worth of experience in the menswear industry
+          as a designer, entrepreneur & fashion consultant helping thousands of
+          men.
+        </p>
+        <p
+          class="text-end fw-semibold"
+          style="max-width: 600px; line-height: 30px"
+        >
+          Now focusing on brand strategizing & digital marketing strategies to
+          help male-centric companies target, funnel and convert leads into
+          loyal long-term fanatics.
+        </p>
       </div>
     </div>
     <div
@@ -230,20 +289,117 @@
     ></div>
   </div>
 </section>
-<section class="row g-0 py-4">
-  <div class="d-flex flex-column justify-content-center align-items-center">
-    <h2 class="display-4 text-uppercase">Mission</h2>
-    <p class="fs-4 text-center">
-      No.1 successful Male-centric brand/business entrepreneur.
-    </p>
-  </div>
-</section>
+<!-- THE JOURNEY -->
 <section class="row g-0">
   <div class="col-12 col-lg-6">
     <div class="ratio ratio-1x1">
       <img
         class="img-fluid object-fit-cover"
-        style=""
+        style="filter: grayscale(100%)"
+        src="assets/main-portrait.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="col-12 col-lg-6 py-5">
+    <div
+      style="height: 100%"
+      class="d-flex flex-column justify-content-center align-items-center gap-3"
+    >
+      <h2
+        class="display-5 text-uppercase fw-bold fst-italic px-2"
+        style="
+          background: linear-gradient(90.22deg, #f1dfaf 0%, #a49a77 120.95%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
+      >
+        The Journey
+      </h2>
+      <img
+        src="assets/the-journey.png"
+        class="img-fluid"
+        style="max-height: 50px"
+        alt=""
+      />
+      <h6 style="letter-spacing: 1px" class="fw-light">
+        Learn about my Past, read my present, join my future
+      </h6>
+
+      <div>
+        <a
+          href="/the-journey"
+          class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
+        >
+          View now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- THE WORK -->
+<section class="row g-0">
+  <div class="order-1 col-lg-6 py-5">
+    <div
+      style="height: 100%"
+      class="d-flex flex-column justify-content-center align-items-center gap-3"
+    >
+      <h2
+        class="display-5 text-uppercase fw-bold px-2 fst-italic"
+        style="
+          background: linear-gradient(
+            135.74deg,
+            #f8f7f7 3.74%,
+            #9d9d9d 119.76%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
+      >
+        The Work
+      </h2>
+      <img
+        src="assets/the-work.png"
+        class="img-fluid"
+        style="max-height: 50px"
+        alt=""
+      />
+      <h6 style="letter-spacing: 1px" class="fw-light">
+        Work I’ve prepared for companies & for personal use.
+      </h6>
+
+      <div>
+        <a
+          href="/the-work"
+          class="btn btn-outline-secondary text-light text-capitalize rounded-0 px-5"
+        >
+          View now
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="order-lg-2 col-lg-6">
+    <div class="ratio ratio-1x1">
+      <img
+        class="img-fluid object-fit-cover"
+        style="filter: grayscale(100%)"
+        src="assets/main-portrait.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+<!-- THE VIEWPOINTS -->
+<section class="row g-0">
+  <div class="col-12 col-lg-6">
+    <div class="ratio ratio-1x1">
+      <img
+        class="img-fluid object-fit-cover"
+        style="filter: grayscale(100%)"
         src="assets/main-portrait.jpg"
         alt=""
       />
@@ -252,36 +408,85 @@
   <div class="col-12 col-lg-6 py-3">
     <div
       style="height: 100%"
-      class="d-flex flex-column justify-content-center align-items-center gap-2"
+      class="d-flex flex-column justify-content-center align-items-center gap-3"
     >
-      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
-        This is a title
+      <h2
+        class="display-5 text-uppercase fw-bold fst-italic px-2"
+        style="
+          background: linear-gradient(
+            135.74deg,
+            #d6b196 3.74%,
+            #735037 119.76%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
+      >
+        The Viewpoints
       </h2>
-      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
+      <img
+        src="assets/the-viewpoint.png"
+        class="img-fluid"
+        style="max-height: 50px"
+        alt=""
+      />
+      <h6 style="letter-spacing: 1px" class="fw-light">
+        Work I’ve prepared for companies & for personal use.
+      </h6>
 
       <div>
-        <button class="btn btn-outline-primary text-light rounded-0 px-5">
-          Click here
-        </button>
+        <a
+          href="/the-viewpoints"
+          class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
+        >
+          View now
+        </a>
       </div>
     </div>
   </div>
 </section>
+<!-- CONTACT -->
 <section class="row g-0">
   <div class="order-1 col-lg-6 py-3">
     <div
       style="height: 100%"
-      class="d-flex flex-column justify-content-center align-items-center gap-2"
+      class="d-flex flex-column justify-content-center align-items-center gap-3"
     >
-      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
-        This is a title
+      <h2
+        class="display-5 text-uppercase fw-bold fst-italic px-2"
+        style="
+          background: linear-gradient(
+            135.74deg,
+            #f8f7f7 3.74%,
+            #9d9d9d 119.76%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
+      >
+        Contact
       </h2>
-      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
+      <img
+        src="assets/contact.png"
+        class="img-fluid"
+        style="max-height: 50px"
+        alt=""
+      />
+      <h6 style="letter-spacing: 1px" class="fw-light">
+        Network with me now, Let’s improve the future.
+      </h6>
 
       <div>
-        <button class="btn btn-outline-primary text-light rounded-0 px-5">
-          Click here
-        </button>
+        <a
+          href="/contact-now"
+          class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
+        >
+          Do it now
+        </a>
       </div>
     </div>
   </div>
@@ -289,65 +494,7 @@
     <div class="ratio ratio-1x1">
       <img
         class="img-fluid object-fit-cover"
-        style=""
-        src="assets/main-portrait.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-</section>
-<section class="row g-0">
-  <div class="col-12 col-lg-6">
-    <div class="ratio ratio-1x1">
-      <img
-        class="img-fluid object-fit-cover"
-        style=""
-        src="assets/main-portrait.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <div class="col-12 col-lg-6 py-3">
-    <div
-      style="height: 100%"
-      class="d-flex flex-column justify-content-center align-items-center gap-2"
-    >
-      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
-        This is a title
-      </h2>
-      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
-
-      <div>
-        <button class="btn btn-outline-primary text-light rounded-0 px-5">
-          Click here
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="row g-0">
-  <div class="order-1 col-lg-6 py-3">
-    <div
-      style="height: 100%"
-      class="d-flex flex-column justify-content-center align-items-center gap-2"
-    >
-      <h2 style="letter-spacing: 1px" class="display-5 text-uppercase">
-        This is a title
-      </h2>
-      <h6 style="letter-spacing: 1px" class="fw-light">here is a Subtitle</h6>
-
-      <div>
-        <button class="btn btn-outline-primary text-light rounded-0 px-5">
-          Click here
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="order-lg-2 col-lg-6">
-    <div class="ratio ratio-1x1">
-      <img
-        class="img-fluid object-fit-cover"
-        style=""
+        style="filter: grayscale(100%)"
         src="assets/main-portrait.jpg"
         alt=""
       />
@@ -355,7 +502,7 @@
   </div>
 </section>
 </main>
-    <footer class="container-fluid"><div class="container-fluid py-4 border-top border-primary">
+    <footer><div class="container-fluid py-4 border-top border-primary">
   <div class="row">
     <div class="col-12 col-md-3 mb-3">
       <div
