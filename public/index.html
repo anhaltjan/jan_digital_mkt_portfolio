@@ -41,7 +41,7 @@
       aria-controls="offcanvasNavbar"
       aria-label="Toggle navigation"
     >
-      <span class="text-light">Menu</span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <a
       class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
@@ -301,50 +301,47 @@
       />
     </div>
   </div>
-  <div class="col-12 col-lg-6 py-5">
-    <div class="container-fluid">
-      <div
-        style="height: 100%"
-        class="d-flex flex-column justify-content-center align-items-center gap-3"
+  <div class="col-12 col-lg-6">
+    <div
+      class="d-flex flex-column align-items-center justify-content-center gap-3 px-3 py-4"
+      style="height: 100%"
+    >
+      <h2
+        class="display-5 text-uppercase fw-bold fst-italic px-2"
+        style="
+          background: linear-gradient(90.22deg, #f1dfaf 0%, #a49a77 120.95%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
       >
-        <h2
-          class="display-5 text-uppercase fw-bold fst-italic px-2"
-          style="
-            background: linear-gradient(90.22deg, #f1dfaf 0%, #a49a77 120.95%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-          "
-        >
-          The Journey
-        </h2>
-        <img
-          src="assets/the-journey.png"
-          class="img-fluid"
-          style="max-height: 40px"
-          alt=""
-        />
-        <h6 style="letter-spacing: 1px" class="fw-light text-center">
-          Learn about my Past, read my present, join my future
-        </h6>
+        The Journey
+      </h2>
 
-        <div>
-          <a
-            href="/the-journey"
-            class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
-          >
-            View now
-          </a>
-        </div>
-      </div>
+      <img
+        src="assets/the-journey.png"
+        class="img-fluid"
+        style="max-height: 40px"
+        alt=""
+      />
+      <h6 style="letter-spacing: 1px" class="fw-light text-center">
+        Learn about my Past, read my present, join my future
+      </h6>
+
+      <a
+        href="/the-journey"
+        class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
+      >
+        View now
+      </a>
     </div>
   </div>
 </section>
 <!-- THE WORK -->
 <section class="row g-0">
   <div class="order-1 col-lg-6 py-5">
-    <div class="container-fluid">
+    <div style="height: 100%" class="container-fluid">
       <div
         style="height: 100%"
         class="d-flex flex-column justify-content-center align-items-center gap-3"
@@ -510,37 +507,99 @@
   </div>
 </section>
 </main>
-    <footer><div class="container-fluid py-4 border-top border-primary">
-  <div class="row">
-    <div class="col-12 col-md-3 mb-3">
-      <div
-        style="height: 100%"
-        class="d-flex align-items-center justify-content-center gap-2"
-      >
-        <h5 class="fw-bold text-uppercase fst-italic m-0">Jan Anhalt</h5>
-        <img style="height: 15px" src="../assets/pistola-gold.png" alt="" />
+    <footer><div class="bg-light py-2">
+  <div class="container">
+    <div class="col">
+      <div class="row py-3">
+        <div class="row">
+          <div class="col-12 col-lg-3 border border-1 p-3">
+            <div class="d-flex flex-column align-items-center gap-3">
+              <a
+                class="d-flex align-items-center gap-2 text-dark fw-bold fst-italic text-uppercase fs-2 m-0"
+                style="text-decoration: none"
+                href="/"
+                >Jan Anhalt
+                <img
+                  class="img-fluid"
+                  width="30px"
+                  src="/assets/pistola-gold.png"
+                  alt="gold gradient pistol"
+              /></a>
+
+              <a href="/">HQ</a>
+              <a href="/the-journey">The Journey</a>
+              <a href="/the-work">The Work</a>
+              <a href="/the-viewpoints">The Viewpoints</a>
+              <a href="/contact-now">Contact Now</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="ratio ratio-1x1">
+              <img
+                class="img-fluid"
+                src="/assets/fiverr.png"
+                alt="monochrome image of Jan Anhalt with a gradient gold Fiverr logo on the bottom right"
+              />
+            </div>
+            <a
+              href="#"
+              class="btn btn-outline-primary text-dark d-grid rounded-0 mt-2"
+              >Work with me on FIVERR
+            </a>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="ratio ratio-1x1">
+              <img
+                class="img-fluid"
+                src="/assets/fiverr.png"
+                alt="monochrome image of Jan Anhalt with a gradient gold Fiverr logo on the bottom right"
+              />
+            </div>
+            <a
+              href="#"
+              class="btn btn-outline-primary text-dark d-grid rounded-0 mt-2"
+              >Work with me on FIVERR
+            </a>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="ratio ratio-1x1">
+              <img
+                class="img-fluid"
+                src="/assets/fiverr.png"
+                alt="monochrome image of Jan Anhalt with a gradient gold Fiverr logo on the bottom right"
+              />
+            </div>
+            <a
+              href="#"
+              class="btn btn-outline-primary text-dark d-grid rounded-0 mt-2"
+              >Work with me on FIVERR
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-12 col-md-4">
       <div
-        style="height: 100%"
-        class="d-flex justify-content-between align-items-center"
+        class="d-flex justify-content-between align-items-center p-3 border border-1"
       >
-        <a href="#" class="p-3">
-          <i class="bi bi-youtube"></i>
-        </a>
-        <a href="#" class="p-3">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="#" class="p-3">
-          <i class="bi bi-instagram"></i>
-        </a>
-        <a href="#" class="p-3">
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="#" class="p-3">
-          <i class="bi bi-facebook"></i>
-        </a>
+        <div class="d-flex gap-5">
+          <a href="#">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+        <div class="text-secondary fw-semibold text-uppercase">
+          Jan Anhalt. 2023
+        </div>
       </div>
     </div>
   </div>
