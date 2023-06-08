@@ -32,6 +32,12 @@
     <header>
       <nav class="navbar fixed-top navbar-hover">
   <div class="container-fluid px-5">
+    <div></div>
+    <a
+      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
+      href="/"
+      >Jan Anhalt
+    </a>
     <button
       class="navbar-toggler border-secondary rounded-0"
       style="background-color: rgba(0, 0, 0, 0.3)"
@@ -43,19 +49,9 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a
-      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
-      href="/"
-      >Jan Anhalt
-      <img
-        class="img-fluid"
-        width="30px"
-        src="/assets/pistola-gold.png"
-        alt="gold gradient pistol"
-    /></a>
 
     <div
-      class="offcanvas offcanvas-start bg-light text-dark"
+      class="offcanvas offcanvas-end"
       tabindex="-1"
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
@@ -113,20 +109,6 @@
             style="width: 100%"
           >
             <i class="bi bi-instagram"></i>
-          </a>
-          <a
-            href="#"
-            class="d-flex justify-content-center py-2"
-            style="width: 100%"
-          >
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a
-            href="#"
-            class="d-flex justify-content-center py-2"
-            style="width: 100%"
-          >
-            <i class="bi bi-facebook"></i>
           </a>
         </div>
         <ul class="navbar-nav justify-content-start flex-grow-1 text-light">
@@ -190,107 +172,97 @@
     </header>
     <main>
 <!-- HERO -->
-<section class="row g-0">
-  <div class="col-12 position-relative">
-    <div style="height: 100vh">
-      <img
-        src="assets/portrait-day.jpg"
-        class="img-fluid"
+<section class="position-relative" style="height: 90vh">
+  <img
+    src="assets/portrait-day.jpg"
+    class="img-fluid"
+    style="
+      filter: grayscale(100%);
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+    "
+    alt=""
+  />
+  <div
+    class="position-absolute top-50 start-50 translate-middle z-1 text-center"
+  >
+    <h1
+      style="font-weight: 900"
+      class="text-white text-uppercase fst-italic display-5"
+    >
+      The Customer you
+      <span
+        class="pe-2"
         style="
-          filter: grayscale(100%);
-          object-fit: cover;
-          object-position: center;
-          height: 100%;
-          width: 100%;
+          background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
         "
-        alt=""
-      />
-    </div>
-    <div class="position-absolute top-50 end-0 translate-middle-y z-1">
-      <div class="rounded-3 me-3">
-        <h1
-          style="font-weight: 900"
-          class="display-5 text-white text-end text-uppercase fst-italic"
-        >
-          The men you
-          <span
-            class="pe-2"
-            style="
-              background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              text-fill-color: transparent;
-            "
-            >seek</span
-          ><br />
-          Neet to see
-          <span
-            class="pe-2"
-            style="
-              background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              text-fill-color: transparent;
-            "
-            >value</span
-          ><br />
-          before they
-          <span
-            class="pe-2"
-            style="
-              background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              text-fill-color: transparent;
-            "
-            >spend</span
-          >.
-        </h1>
-        <p
-          class="text-end fw-semibold"
-          style="max-width: 600px; line-height: 30px"
-        >
-          <span class="fs-5 fw-bold fst-italic text-uppercase"
-            >Jan Anhalt -
-          </span>
-          With more than a decade worth of experience in the menswear industry
-          as a designer, entrepreneur & fashion consultant helping thousands of
-          men.
-        </p>
-        <p
-          class="text-end fw-semibold"
-          style="max-width: 600px; line-height: 30px"
-        >
-          Now focusing on brand strategizing & digital marketing strategies to
-          help male-centric companies target, funnel and convert leads into
-          loyal long-term fanatics.
-        </p>
-      </div>
-    </div>
+        >seek</span
+      ><br />
+      Need to see
+      <span
+        class="pe-2"
+        style="
+          background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
+        >value</span
+      ><br />
+      before they
+      <span
+        class="pe-2"
+        style="
+          background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        "
+        >spend</span
+      >.
+    </h1>
     <div
-      class="position-absolute"
-      style="
-        background-image: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0.73)
-        );
-
-        background-size: cover;
-
-        bottom: 0;
-        top: 0%;
-        left: 0;
-        right: 0;
-      "
-    ></div>
+      class="fw-semibold fst-italic d-flex flex-column align-items-center justify-content-center"
+      style="line-height: 30px"
+    >
+      <p>
+        You found me because you have a brand and you need help, <br />
+        because the truth is, it probably suck. Or maybe not.
+      </p>
+      <p>
+        It's my job to evaluate your brand, refocus it, align it, and grow it.
+      </p>
+      <p>I had my own brand, I know what you are going through.</p>
+    </div>
   </div>
+  <div
+    class="position-absolute"
+    style="
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.73)
+      );
+
+      background-size: cover;
+
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    "
+  ></div>
 </section>
 <!-- THE JOURNEY -->
-<section class="row g-0">
+<section class="row">
   <div class="col-12 col-lg-6">
     <div class="ratio ratio-1x1">
       <img
@@ -407,7 +379,7 @@
     </div>
   </div>
   <div class="col-12 col-lg-6 py-3">
-    <div class="container-fluid">
+    <div style="height: 100%" class="container-fluid">
       <div
         style="height: 100%"
         class="d-flex flex-column justify-content-center align-items-center gap-3"
@@ -453,7 +425,7 @@
 <!-- CONTACT -->
 <section class="row g-0">
   <div class="order-1 col-lg-6 py-3">
-    <div class="container-fluid">
+    <div class="container-fluid" style="height: 100%">
       <div
         style="height: 100%"
         class="d-flex flex-column justify-content-center align-items-center gap-3"
@@ -510,21 +482,16 @@
     <footer><div class="bg-light py-2">
   <div class="container">
     <div class="col">
-      <div class="row py-3">
+      <div class="row">
         <div class="row">
-          <div class="col-12 col-lg-3 border border-1 p-3">
+          <div class="col-12 col-md-6 col-lg-3 p-3">
             <div class="d-flex flex-column align-items-center gap-3">
               <a
                 class="d-flex align-items-center gap-2 text-dark fw-bold fst-italic text-uppercase fs-2 m-0"
                 style="text-decoration: none"
                 href="/"
                 >Jan Anhalt
-                <img
-                  class="img-fluid"
-                  width="30px"
-                  src="/assets/pistola-gold.png"
-                  alt="gold gradient pistol"
-              /></a>
+              </a>
 
               <a href="/">HQ</a>
               <a href="/the-journey">The Journey</a>
@@ -533,12 +500,12 @@
               <a href="/contact-now">Contact Now</a>
             </div>
           </div>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 p-3">
             <div class="ratio ratio-1x1">
               <img
                 class="img-fluid"
-                src="/assets/fiverr.png"
-                alt="monochrome image of Jan Anhalt with a gradient gold Fiverr logo on the bottom right"
+                src="/assets/youtube.png"
+                alt="monochrome image of Jan Anhalt with a gradient gold YouTube logo on the bottom right"
               />
             </div>
             <a
@@ -547,12 +514,12 @@
               >Work with me on FIVERR
             </a>
           </div>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 p-3">
             <div class="ratio ratio-1x1">
               <img
                 class="img-fluid"
-                src="/assets/fiverr.png"
-                alt="monochrome image of Jan Anhalt with a gradient gold Fiverr logo on the bottom right"
+                src="/assets/linkedin.png"
+                alt="monochrome image of Jan Anhalt with a gradient gold LinkedIn logo on the bottom right"
               />
             </div>
             <a
@@ -561,7 +528,7 @@
               >Work with me on FIVERR
             </a>
           </div>
-          <div class="col-12 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 p-3">
             <div class="ratio ratio-1x1">
               <img
                 class="img-fluid"
@@ -577,28 +544,16 @@
           </div>
         </div>
       </div>
-      <div
-        class="d-flex justify-content-between align-items-center p-3 border border-1"
-      >
-        <div class="d-flex gap-5">
-          <a href="#">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="#">
-            <i class="bi bi-youtube"></i>
-          </a>
-          <a href="#">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="bi bi-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="bi bi-facebook"></i>
-          </a>
-        </div>
-        <div class="text-secondary fw-semibold text-uppercase">
-          Jan Anhalt. 2023
+      <div class="row">
+        <div class="col">
+          <div
+            style="height: 100%"
+            class="d-flex justify-content-center align-items-center"
+          >
+            <h6 style="font-size: small" class="text-secondary text-center">
+              Jan Anhalt. 2023
+            </h6>
+          </div>
         </div>
       </div>
     </div>
