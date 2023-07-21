@@ -1,40 +1,17 @@
-$primary: #a49a77;
+$primary: #515958;
 $secondary: #848482;
 $light: #efefef;
-$dark: #181818;
-$body-bg: #181818;
-$body-color: #efefef;
-
-$custom-colors: (
-  'bronze-gradient': linear-gradient(135.74deg, #d6b196 3.74%, #735037 119.76%),
-  'silver-gradient': linear-gradient(135.74deg, #f8f7f7 3.74%, #9d9d9d 119.76%),
-  'gold-gradient': linear-gradient(90.22deg, #f1dfaf 3.74%, #a49a77 119.76%),
-  'black-gradient': linear-gradient(94.8deg, #5a5a5a 1.33%, #000000 119.76%),
-  'white-bg:': #fefefe,
-  'paper-white-bg': #f9fbff,
-);
+$dark: #1f2222;
+$body-bg: #ffffff;
+$body-color: #000;
 
 //import Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-/* Inter - GF reg400 med500 semibold600 bold700 xtrabold800 black900 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-/* font-family: 'Inter', sans-serif; */
-
-/* Raleway reg400 med500 semibold600 bold700 w.italics */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-/* font-family: 'Raleway', sans-serif; */
-
-/* Courier Prime reg400 bold700 w.italics */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* font-family: 'Courier Prime', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
-  font-family: 'Inter', sans-serif;
-}
-
-p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 /* width */
@@ -54,7 +31,7 @@ p {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b4a981;
+  background: $primary;
 }
 
 /* Text Selection Color */
@@ -68,11 +45,21 @@ p {
   background: rgba(164, 147, 119, 0.5);
 }
 
-.navbar-hover:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
+#blinker {
+  font-size: 1rem;
+  animation: blink 1s linear infinite;
 }
 
-.offcanvas-body a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

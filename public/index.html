@@ -23,24 +23,33 @@
 ></script>
 
 <title>Jan Anhalt | Home</title>
-<link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" />
   
   </head>
   <body>
     <!-- CTA banner -->
 
     <header>
-      <nav class="navbar fixed-top navbar-hover">
-  <div class="container-fluid px-5">
-    <div></div>
+      <nav class="navbar">
+  <div class="container-fluid">
     <a
-      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
+      class="navbar-brand text-uppercase bg-dark text-white px-3 fw-bold"
       href="/"
       >Jan Anhalt
+
+      <div
+        class="d-flex flex-wrap fw-normal gap-1 justify-content-center align-items-center"
+        style="font-size: 0.75rem"
+      >
+        <span class="" id="blinker"
+          ><i class="bi bi-geo-alt-fill" style="color: #00eb00"></i
+        ></span>
+        <span>東京 | Tokyo</span>
+      </div>
     </a>
+
     <button
-      class="navbar-toggler border-secondary rounded-0"
-      style="background-color: rgba(0, 0, 0, 0.3)"
+      class="navbar-toggler border-0"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasNavbar"
@@ -56,38 +65,36 @@
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
     >
-      <div
-        class="offcanvas-header d-flex justify-content-between align-items-center"
-      >
-        <h4
-          class="offcanvas-title text-uppercase fs-2 fst-italic fw-bold d-flex gap-2 justify-content-between align-items-center"
-          id="offcanvasNavbarLabel"
-        >
-          Jan Anhalt
-          <img
-            class="img-fluid"
-            width="30px"
-            src="/assets/pistola-gold.png"
-            alt="gold gradient pistol"
-          />
-        </h4>
+      <div class="offcanvas-header">
         <button
           type="button"
-          class="btn bg-gold-gradient text-light rounded-0"
+          class="btn bg-gold-gradient rounded-0"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         >
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
-      <div>
-        <img
-          class="img-fluid"
-          src="../assets/social-media-profile.png"
-          alt=""
-        />
-      </div>
+
       <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <ul
+          class="navbar-nav justify-content-start flex-grow-1 fs-5 text-uppercase fw-bold text-primary"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio">The Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">The Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/anhaltjan/"
+              >Contact Now (LinkedIn)</a
+            >
+          </li>
+        </ul>
         <div class="d-flex justify-content-between">
           <a
             href="#"
@@ -111,487 +118,134 @@
             <i class="bi bi-instagram"></i>
           </a>
         </div>
-        <ul class="navbar-nav justify-content-start flex-grow-1 text-light">
-          <li class="nav-item">
-            <a class="nav-link text-light" href="/">Home</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-light"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About Jan
-            </a>
-            <ul class="dropdown-menu border-primary border-1 rounded-0">
-              <li><a class="dropdown-item py-2" href="#">Bio & Goals</a></li>
-
-              <li>
-                <a
-                  class="dropdown-item py-2"
-                  href="https://www.youtube.com/@jananhalt"
-                  target="_blank"
-                  >Follow My life</a
-                >
-              </li>
-
-              <li>
-                <a class="dropdown-item py-2" href="#">Favourite Brands</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-light"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Let me Help
-            </a>
-            <ul class="dropdown-menu border-primary border-1 rounded-0">
-              <li><a class="dropdown-item py-2" href="#">Social Media</a></li>
-
-              <li><a class="dropdown-item py-2" href="#">Menswear</a></li>
-
-              <li>
-                <a class="dropdown-item py-2" href="#">Sales</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
 </nav>
   
     </header>
-    <main>
+    <main style="min-height: 100vh" class="container-fluid">
+      
 <!-- HERO -->
-<section class="position-relative" style="height: 90vh">
-  <img
-    src="assets/portrait-day.jpg"
-    class="img-fluid"
-    style="
-      filter: grayscale(100%);
-      object-fit: cover;
-      object-position: center;
-      height: 100%;
-      width: 100%;
-    "
-    alt=""
-  />
-  <div
-    class="position-absolute top-50 start-50 translate-middle z-1 text-center"
-  >
-    <h1 style="font-weight: 900" class="text-white text-uppercase fst-italic">
-      The Customer you
-      <span
-        class="pe-2"
-        style="
-          background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-fill-color: transparent;
-        "
-        >seek</span
-      ><br />
-      Need to see
-      <span
-        class="pe-2"
-        style="
-          background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-fill-color: transparent;
-        "
-        >value</span
-      ><br />
-      before they
-      <span
-        class="pe-2"
-        style="
-          background: linear-gradient(90deg, #f1dfaf 0%, #a49a77 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-fill-color: transparent;
-        "
-        >spend</span
-      >.
-    </h1>
-    <div
-      class="fw-semibold fst-italic d-flex flex-column align-items-center justify-content-center"
-      style="line-height: 30px"
-    >
-      <!--       <p>
-        You found me because you have a brand and you need help, <br />
-        because the truth is, it probably suck. Or maybe not.
-      </p>
-      <p>
-        It's my job to evaluate your brand, refocus it, align it, and grow it.
-      </p>
-      <p>I had my own brand, I know what you are going through.</p> -->
-    </div>
+<section class="row m-0">
+  <div class="col-12 col-md-4 p-0">
+    <img
+      src="/assets/main-portrait.jpg"
+      class="img-fluid h-100"
+      style="object-fit: cover"
+      alt="Portrait of Jan Anhalt"
+    />
   </div>
   <div
-    class="position-absolute"
-    style="
-      background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.73)
-      );
+    class="col-12 col-md-8 py-3 d-flex flex-column justify-content-center align-items-center bg-light"
+  >
+    <p class="fs-4 fw-bold p-2 text-center" style="max-width: 50ch">
+      I'm Jan I Anhalt, welcome to my portfolio. I'm a new digital strategist
+      and digital customer service consultant with 10 years of expertise in
+      Fashion, sepcifically menswear and almost five years as a private overseas
+      english education.
+    </p>
+    <p class="fs-5 text-center" style="max-width: 50ch">
+      I'm responsible to make, start and update marketing strategies to
+      pursuade, guide, update and teach people to love your brand, product or
+      service through SEO, social media, email or content marketing supported by
+      data.
+    </p>
 
-      background-size: cover;
+    <div class="py-2 px-4 text-center" style="max-width: 50ch">
+      <h3>For Opinions, Ideas & Updates</h3>
+      <a class="btn btn-dark rounded-0 w-50" href="/blog">See The Blog</a>
+      <hr />
+      <h3>To view my Professional & Personal Projects</h3>
+      <a class="btn btn-dark rounded-0 w-50" href="/portfolio "
+        >See The Portfolio</a
+      >
+      <hr />
+      <h3>For Offers & Connections</h3>
+      <a
+        class="btn btn-dark rounded-0 w-50"
+        target="_blank"
+        href="https://www.linkedin.com/in/anhaltjan/ "
+        >Network on LinkedIn</a
+      >
+    </div>
+  </div>
+</section>
 
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-    "
-  ></div>
+<section
+  class="bg-dark text-white my-3 text-center text-uppercase fw-bold fs-3"
+>
+  A little bit about me
 </section>
 <!-- THE PITCH -->
 <section
-  class="container d-flex flex-column justify-content-center align-items-center py-5"
+  class="container d-flex flex-column justify-content-center align-items-center py-5 fs-5"
 >
-  <div class="text-center" style="max-width: 90ch">
-    <p>
-      If you found my site, most likely you are starting a brand or already have
-      one. Most likely your product is unsellable, or maybe it's great but it's
-      not selling it's value properly. There are many factors that are needed to
-      change a good brand into great brand and it takes a lot of work to make
-      that brand into a valuable brand. Further, it takes a legendary amount of
-      work and time to make a valubale brand into a legendary brand.
+  <div class="text-start" style="max-width: 70ch">
+    <p style="text-align: justify">
+      I'm Well-traveled with experiences of living and working all over Japan -
+      making people genuinely satisfied is what motivates my work. I love
+      fashion, design and music. I adapt perfectly well yet, I'm naturally not a
+      multi-tasker and choose not to be one. If you need that type of person,
+      understood but I do believe focus is needed in order to do our jobs
+      properly. This is why I embrace physical/mental challenges designing and
+      writing where extreme concentration is needed.
     </p>
-    <p>
-      My name is Jan, I specialize in evaluating, adjusting and scaling online
-      and brick-n-mortar clothing brands. Trust me, it's a lot of work but doing
-      the work to get a normal brand into valuable brand is worth it, why?
+
+    <p style="text-align: justify">
+      I earned a high reputation as 'The person' for menswear consulting and
+      luxury denim products and tailoring services in my local area with 100+
+      regular clients I got through word of mouth and through social media
+      gained a few regular clients outside of Canada. After closing my business
+      to pursue my dream to live in Japan. I became an ESL instructor, over time
+      with over 75 franchise schools across japan requesting for my assistance I
+      quickly became one of the top instructors in the company.
     </p>
-    <p>
-      Because I had my own menswear brand before selling my brand and moving to
-      Tokyo, I put in more than 7 years into the company and learned a lot of
-      valuable lessons and a decade worth of experience in fashion consulting.
+    <p style="text-align: justify">
+      My experience have taught me if you provide an exceptional product and
+      deliver it with excpetional service with a strong stratgy that's backed by
+      data the higher your organic growth will be, and the easier it will be to
+      create amazing relationships with customers that last for years or even
+      decades.
     </p>
-    <p>
-      So,if you are beginning, perfect! I will get you to 10 years ahead in half
-      the amount of time. It just takes a lot of work, big swings, most of all
-      no ego.
+
+    <p style="text-align: justify">
+      Thank you for reading my introduction. Right now, please take a moment to
+      network with me on
+      <a target="_blank" href="https://www.linkedin.com/in/anhaltjan/"
+        >Linkedin</a
+      >
+      or email me at
+      <a href="mailto:anhaltjan@gmail.com">anhaltjan@gmail.com</a>; I promise I
+      will get back to you as soon as I can.
     </p>
-    <p>
-      Please click the button below to view my shopify service packages, if they
-      are too expensive instead sucbscribe to my YouTube for my weekly videos;
-      furthermore, network with me on LinkedIn and ask me questions.
-    </p>
-    <p>I leave it up to you, I trust you'll make the right decision</p>
-    <p>talk to you soon, if not good luck!</p>
+
+    <p>Jan I Anhalt</p>
+    <img src="/assets/signature-2.png" alt="Jan Anhalt's signature" />
   </div>
 </section>
-<!-- THE JOURNEY -->
-<section class="row">
-  <div class="col-12 col-lg-6">
-    <div class="ratio ratio-1x1">
-      <img
-        class="img-fluid object-fit-cover"
-        style="filter: grayscale(100%)"
-        src="assets/main-portrait.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <div class="col-12 col-lg-6">
-    <div
-      class="d-flex flex-column align-items-center justify-content-center gap-4 px-3 py-4"
-      style="height: 100%"
-    >
-      <h2
-        class="display-5 text-uppercase fw-bold fst-italic px-2 my-0"
-        style="
-          background: linear-gradient(90.22deg, #f1dfaf 0%, #a49a77 120.95%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          text-fill-color: transparent;
-        "
-      >
-        The Journey
-      </h2>
 
-      <img
-        src="assets/the-journey.png"
-        class="img-fluid"
-        style="max-height: 30px"
-        alt=""
-      />
-      <h6 style="letter-spacing: 1px" class="fw-light text-center">
-        Learn about my Past, read my present, join my future
-      </h6>
-
-      <a
-        href="/the-journey"
-        class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
-      >
-        View now
-      </a>
-    </div>
-  </div>
-</section>
->
-<!-- THE WORK -->
-<section class="row g-0">
-  <div class="order-1 col-lg-6 py-5">
-    <div style="height: 100%" class="container-fluid">
-      <div
-        style="height: 100%"
-        class="d-flex flex-column justify-content-center align-items-center gap-4"
-      >
-        <h2
-          class="display-5 text-uppercase fw-bold px-2 fst-italic my-0"
-          style="
-            background: linear-gradient(
-              135.74deg,
-              #f8f7f7 3.74%,
-              #9d9d9d 119.76%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-          "
-        >
-          The Work
-        </h2>
-        <img
-          src="assets/the-work.png"
-          class="img-fluid"
-          style="max-height: 30px"
-          alt=""
-        />
-        <h6 style="letter-spacing: 1px" class="fw-light text-center">
-          Work I’ve prepared for companies & for personal use.
-        </h6>
-
-        <div>
-          <a
-            href="/the-work"
-            class="btn btn-outline-secondary text-light text-capitalize rounded-0 px-5"
-          >
-            View now
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="order-lg-2 col-lg-6">
-    <div class="ratio ratio-1x1">
-      <img
-        class="img-fluid object-fit-cover"
-        style="filter: grayscale(100%)"
-        src="assets/main-portrait.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-</section>
-<!-- THE VIEWPOINTS -->
-<section class="row g-0">
-  <div class="col-12 col-lg-6">
-    <div class="ratio ratio-1x1">
-      <img
-        class="img-fluid object-fit-cover"
-        style="filter: grayscale(100%)"
-        src="assets/main-portrait.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-  <div class="col-12 col-lg-6 py-3">
-    <div style="height: 100%" class="container-fluid">
-      <div
-        style="height: 100%"
-        class="d-flex flex-column justify-content-center align-items-center gap-4"
-      >
-        <h2
-          class="display-5 text-uppercase fw-bold fst-italic px-2 my-0"
-          style="
-            background: linear-gradient(
-              135.74deg,
-              #d6b196 3.74%,
-              #735037 119.76%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-          "
-        >
-          The Viewpoints
-        </h2>
-        <img
-          src="assets/the-viewpoint.png"
-          class="img-fluid"
-          style="max-height: 30px"
-          alt=""
-        />
-        <h6 style="letter-spacing: 1px" class="fw-light text-center">
-          Work I’ve prepared for companies & for personal use.
-        </h6>
-
-        <div>
-          <a
-            href="/the-viewpoints"
-            class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
-          >
-            View now
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- CONTACT -->
-<section class="row g-0">
-  <div class="order-1 col-lg-6 py-3">
-    <div class="container-fluid" style="height: 100%">
-      <div
-        style="height: 100%"
-        class="d-flex flex-column justify-content-center align-items-center gap-4"
-      >
-        <h2
-          class="display-5 text-uppercase fw-bold fst-italic px-2 my-0"
-          style="
-            background: linear-gradient(
-              135.74deg,
-              #f8f7f7 3.74%,
-              #9d9d9d 119.76%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-          "
-        >
-          Contact
-        </h2>
-        <img
-          src="assets/contact.png"
-          class="img-fluid"
-          style="max-height: 30px"
-          alt=""
-        />
-        <h6 style="letter-spacing: 1px" class="fw-light text-center">
-          Network with me now, Let’s improve the future.
-        </h6>
-
-        <div>
-          <a
-            href="/contact-now"
-            class="btn btn-outline-secondary text-light rounded-0 px-5 text-capitalize"
-          >
-            Do it now
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="order-lg-2 col-lg-6">
-    <div class="ratio ratio-1x1">
-      <img
-        class="img-fluid object-fit-cover"
-        style="filter: grayscale(100%)"
-        src="assets/main-portrait.jpg"
-        alt=""
-      />
-    </div>
-  </div>
-</section>
-</main>
-    <footer><div class="bg-light py-2">
+    </main>
+    <footer><div class="bg-dark text-white py-2">
   <div class="container">
-    <div class="col">
-      <div class="row">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 p-3">
-            <div class="d-flex flex-column align-items-center gap-3">
-              <a
-                class="d-flex align-items-center gap-2 text-dark fw-bold fst-italic text-uppercase fs-2 m-0"
-                style="text-decoration: none"
-                href="/"
-                >Jan Anhalt
-              </a>
-
-              <a href="/">HQ</a>
-              <a href="/the-journey">The Journey</a>
-              <a href="/the-work">The Work</a>
-              <a href="/the-viewpoints">The Viewpoints</a>
-              <a href="/contact-now">Contact Now</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 p-3">
-            <div class="ratio ratio-1x1">
-              <img
-                class="img-fluid"
-                src="/assets/youtube.png"
-                alt="monochrome image of Jan Anhalt with a gradient gold YouTube logo on the bottom right"
-              />
-            </div>
-            <a
-              href="#"
-              class="btn btn-outline-primary text-dark d-grid rounded-0 mt-2"
-              >Work with me on FIVERR
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 p-3">
-            <div class="ratio ratio-1x1">
-              <img
-                class="img-fluid"
-                src="/assets/linkedin.png"
-                alt="monochrome image of Jan Anhalt with a gradient gold LinkedIn logo on the bottom right"
-              />
-            </div>
-            <a
-              href="#"
-              class="btn btn-outline-primary text-dark d-grid rounded-0 mt-2"
-              >Work with me on FIVERR
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 p-3">
-            <div class="ratio ratio-1x1">
-              <img
-                class="img-fluid"
-                src="/assets/fiverr.png"
-                alt="monochrome image of Jan Anhalt with a gradient gold Fiverr logo on the bottom right"
-              />
-            </div>
-            <a
-              href="#"
-              class="btn btn-outline-primary text-dark d-grid rounded-0 mt-2"
-              >Work with me on FIVERR
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div
-            style="height: 100%"
-            class="d-flex justify-content-center align-items-center"
-          >
-            <h6 style="font-size: small" class="text-secondary text-center">
-              Jan Anhalt. 2023
-            </h6>
-          </div>
-        </div>
-      </div>
+    <ul style="list-style: none;" class="d-flex justify-content-center align-items-center gap-4">
+      <li><a href=""><i class="bi bi-youtube fs-4"></i></a></li>
+      <li><a href=""><i class="bi bi-instagram fs-4"></i></a></li>
+      <li><a href=""><i class="bi bi-linkedin fs-4"></i></a></li>
+    </ul>
+    <ul class=" d-flex justify-content-center align-items-center" style="list-style: none">
+      <li><a style="text-decoration: none" href="/blog">See the Blog &nbsp;|&nbsp;</a></li>
+      <li><a style="text-decoration: none" href="/portfolio">See the Portfolio &nbsp;|&nbsp;</a></li>
+      <li><a style="text-decoration: none" target="_blank" href="https://www.linkedin.com/in/anhaltjan/">Contact (LinkedIn)</a></li>
+    </ul>
+    <div class="text-center">
+      <span class="bg-primary text-dark py-2 px-3 text-uppercase fw-bold fs-4">
+        Jan Anhalt
+      </span>
     </div>
+    <div class="text-center text-primary m-2">July 2023 ©</div>
+  </div>
+    
   </div>
 </div>
 </footer>

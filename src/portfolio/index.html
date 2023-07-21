@@ -1,0 +1,194 @@
+---
+layout: /layouts/base.html
+title: 'Projects'
+---
+
+<section
+  class="bg-light d-flex flex-column justify-content-center align-items-center"
+  style="height: 30vh"
+>
+  <h1 class="fs-1 text-uppercase fw-bold">{{ title }}</h1>
+  <h5 class="text-uppercase">Professional & Personal</h5>
+</section>
+<section class="my-2">
+  <h3 class="bg-dark text-white text-uppercase fw-bold text-center py-2">
+    Other Skills
+  </h3>
+  <ul
+    class="d-flex gap-3 flex-wrap my-5 p-0 align-items-center justify-content-between"
+    style="list-style: none"
+  >
+    <li
+      class="bg-dark text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      HTML
+    </li>
+    <li
+      class="bg-primary text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      css
+    </li>
+    <li
+      class="bg-secondary text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Bootstrap v5.3
+    </li>
+    <li
+      class="bg-light text-dark py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Eleventy (SSG)
+    </li>
+    <li
+      class="bg-dark text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Figma
+    </li>
+    <li
+      class="bg-primary text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Canva
+    </li>
+    <li
+      class="bg-secondary text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Fashion Design
+    </li>
+    <li
+      class="bg-light text-dark py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      denim jeans design
+    </li>
+    <li
+      class="bg-dark text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Denim Jeans construction
+    </li>
+    <li
+      class="bg-primary text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Style Consulting
+    </li>
+    <li
+      class="bg-secondary text-white py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Formalwear Consulting
+    </li>
+    <li
+      class="bg-light text-dark py-1 px-2 text-uppercase text-uppercase fw-bold"
+    >
+      Sales & Customer Service
+    </li>
+  </ul>
+</section>
+<section class="my-2">
+  <h3 class="bg-dark text-white text-uppercase fw-bold text-center py-2">
+    Digital Strategy
+  </h3>
+  <ul class="row g-3 p-0 py-3" style="list-style: none">
+    {%- for post in collections.projects -%}
+    <li class="col-12 col-md-6 col-lg-3 card border-0">
+      <a href="{{ post.url }}" style="text-decoration: none">
+        <div class="border border-dark">
+          <h3
+            class="text-center bg-dark text-white py-2 text-uppercase fs-5 fw-bold m-0"
+            style="letter-spacing: 1px"
+          >
+            {{post.data.title}}
+          </h3>
+          <div class="ratio ratio-1x1">
+            <img
+              style="object-fit: cover"
+              class="img-fluid border-bottom border-top border-dark"
+              src="{{post.data.image}}"
+              alt="{post.data.alt}"
+            />
+          </div>
+          <div
+            class="text-center py-2 d-flex justify-content-between align-items-center px-3"
+          >
+            <span style="content: none"></span>
+            <span class="m-0 fs-5 text-uppercase">Read Now</span>
+            <span class="fs-4 m-0">⇀</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+<section>
+  <h2 class="bg-dark text-white text-uppercase fw-bold text-center py-2">
+    Personal projects
+  </h2>
+  <ul class="row g-3 p-0 py-3 justify-content-center" style="list-style: none">
+    <li class="col-12 col-md-6 col-lg-3 card border-0">
+      <a href="/" style="text-decoration: none">
+        <div class="border border-dark">
+          <h3
+            class="text-center bg-dark text-white py-2 text-uppercase fs-5 fw-bold m-0"
+            style="letter-spacing: 1px"
+          >
+            Anhalt
+          </h3>
+          <h6
+            class="text-center bg-dark text-white py-2 text-uppercase m-0"
+            style="letter-spacing: 1px; font-size: 0.75rem"
+          >
+            Fashion House
+          </h6>
+          <div class="ratio ratio-16x9">
+            <img
+              style="object-fit: cover"
+              class="img-fluid border-bottom border-top border-dark"
+              src="/assets/anhalt-label.png"
+              alt="ANHALT fashion house label"
+            />
+          </div>
+          <div
+            class="text-center py-2 d-flex justify-content-between align-items-center px-3"
+          >
+            <span style="content: none"></span>
+            <span class="m-0 fs-5 text-uppercase">Visit Now</span>
+            <span class="fs-4 m-0">⇀</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li class="col-12 col-md-6 col-lg-3 card border-0">
+      <a href="/" style="text-decoration: none">
+        <div class="border border-dark">
+          <h3
+            class="text-center bg-dark text-white py-2 text-uppercase fs-5 fw-bold m-0"
+            style="letter-spacing: 1px"
+          >
+            REALAER
+          </h3>
+          <h6
+            class="text-center bg-dark text-white py-2 text-uppercase m-0"
+            style="letter-spacing: 1px; font-size: 0.75rem"
+          >
+            Publication
+          </h6>
+          <div class="ratio ratio-16x9">
+            <img
+              style="object-fit: cover"
+              class="img-fluid border-bottom border-top border-dark"
+              src="/assets/realaer-label.png"
+              alt="REALAER publication label"
+            />
+          </div>
+          <div
+            class="text-center py-2 d-flex justify-content-between align-items-center px-3"
+          >
+            <span style="content: none"></span>
+            <span class="m-0 fs-5 text-uppercase">Visit Now</span>
+            <span class="fs-4 m-0">⇀</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <a href="/" class="btn btn-outline-dark rounded-0 w-100 my-5">
+    Go Back Home</a
+  >
+</section>

@@ -1,14 +1,23 @@
-<nav class="navbar fixed-top navbar-hover">
-  <div class="container-fluid px-5">
-    <div></div>
+<nav class="navbar">
+  <div class="container-fluid">
     <a
-      class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-light fw-bold fst-italic text-uppercase fs-2 m-0"
+      class="navbar-brand text-uppercase bg-dark text-white px-3 fw-bold"
       href="/"
       >Jan Anhalt
+
+      <div
+        class="d-flex flex-wrap fw-normal gap-1 justify-content-center align-items-center"
+        style="font-size: 0.75rem"
+      >
+        <span class="" id="blinker"
+          ><i class="bi bi-geo-alt-fill" style="color: #00eb00"></i
+        ></span>
+        <span>東京 | Tokyo</span>
+      </div>
     </a>
+
     <button
-      class="navbar-toggler border-secondary rounded-0"
-      style="background-color: rgba(0, 0, 0, 0.3)"
+      class="navbar-toggler border-0"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasNavbar"
@@ -24,38 +33,36 @@
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
     >
-      <div
-        class="offcanvas-header d-flex justify-content-between align-items-center"
-      >
-        <h4
-          class="offcanvas-title text-uppercase fs-2 fst-italic fw-bold d-flex gap-2 justify-content-between align-items-center"
-          id="offcanvasNavbarLabel"
-        >
-          Jan Anhalt
-          <img
-            class="img-fluid"
-            width="30px"
-            src="/assets/pistola-gold.png"
-            alt="gold gradient pistol"
-          />
-        </h4>
+      <div class="offcanvas-header">
         <button
           type="button"
-          class="btn bg-gold-gradient text-light rounded-0"
+          class="btn bg-gold-gradient rounded-0"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
         >
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
-      <div>
-        <img
-          class="img-fluid"
-          src="../assets/social-media-profile.png"
-          alt=""
-        />
-      </div>
+
       <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <ul
+          class="navbar-nav justify-content-start flex-grow-1 fs-5 text-uppercase fw-bold text-primary"
+        >
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/portfolio">The Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog">The Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/anhaltjan/"
+              >Contact Now (LinkedIn)</a
+            >
+          </li>
+        </ul>
         <div class="d-flex justify-content-between">
           <a
             href="#"
@@ -79,59 +86,6 @@
             <i class="bi bi-instagram"></i>
           </a>
         </div>
-        <ul class="navbar-nav justify-content-start flex-grow-1 text-light">
-          <li class="nav-item">
-            <a class="nav-link text-light" href="/">Home</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-light"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              About Jan
-            </a>
-            <ul class="dropdown-menu border-primary border-1 rounded-0">
-              <li><a class="dropdown-item py-2" href="#">Bio & Goals</a></li>
-
-              <li>
-                <a
-                  class="dropdown-item py-2"
-                  href="https://www.youtube.com/@jananhalt"
-                  target="_blank"
-                  >Follow My life</a
-                >
-              </li>
-
-              <li>
-                <a class="dropdown-item py-2" href="#">Favourite Brands</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-light"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Let me Help
-            </a>
-            <ul class="dropdown-menu border-primary border-1 rounded-0">
-              <li><a class="dropdown-item py-2" href="#">Social Media</a></li>
-
-              <li><a class="dropdown-item py-2" href="#">Menswear</a></li>
-
-              <li>
-                <a class="dropdown-item py-2" href="#">Sales</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
